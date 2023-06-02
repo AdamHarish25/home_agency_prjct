@@ -8,8 +8,11 @@ import logo3 from "../Attachments/Image/PublicHome/Logos/logo3.svg";
 import logo4 from "../Attachments/Image/PublicHome/Logos/logo4.svg";
 import logo5 from "../Attachments/Image/PublicHome/Logos/logo5.svg";
 
-import pubImg3 from '../Attachments/Image/PublicHome/pubImg3.svg'
+import pubImg3 from '../Attachments/Image/PublicHome/pubImg3.svg';
 
+import video1 from '../Attachments/Video/video.mp4'
+import check from '../Attachments/Image/PublicHome/check.svg';
+import pubImg4 from '../Attachments/Image/PublicHome/pubImg4.svg';
 
 const DataStorage = {
   Navbar: {
@@ -82,7 +85,7 @@ const DataStorage = {
         "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
       button1: {
         title: "ABOUT US",
-        link: "/About"
+        link: "/About",
       },
 
       list1: [
@@ -106,7 +109,7 @@ const DataStorage = {
         "Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.",
       button2: {
         title: "Read More",
-        link: "/"
+        link: "/",
       },
 
       list2: [
@@ -120,6 +123,36 @@ const DataStorage = {
           title: "Themselves in the merchant's",
         },
       ],
+    },
+
+    page_4: {
+      video: video1,
+      header1: "Video Reel",
+      title1: "Unlock The Greatest Value Possible",
+      subtitle1:
+        "Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.",
+
+      header2: "FEATURES",
+      title2: "Give Your Site A New Look",
+      subtitle2:
+        "Service range including technical skills, design, business understanding.",
+      list1: [
+        {
+          title: "Range including technical skills",
+          dot: check,
+        },
+        {
+          title: "Business understanding",
+          dot: check,
+        },
+        {
+          title: "Partner on the long run",
+          dot: check,
+        },
+      ],
+      img: pubImg4,
+
+
     },
   },
 };

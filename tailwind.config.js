@@ -33,6 +33,7 @@ module.exports = {
         "light-creme": "#FDF0E9",
         "dark-creme": "#F3D1BF",
         "dark-brown": "#391400",
+        
       },
       backgroundImage: {
         "6-sides-star": "url('./Attachments/Image/PublicHome/pubImg1-2.svg')",

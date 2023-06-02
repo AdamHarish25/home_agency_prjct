@@ -5,13 +5,16 @@ import PublicHome from './Routes/Home/PublicHome';
 import PersonalHome from './Routes/Home/PersonalHome';
 
 function App() {
+
+
   return (
-    <div id="App" className='w-screen h-auto relative'>
+    <div id="App" className='w-screen h-auto relative bg-black'>
       <Navbar/>
       <Routes>
         <Route path='/' exact element={<PublicHome />}/>
         <Route path='/Personal' element={<PersonalHome />}/>
       </Routes>
+
     </div>
   );
 }
