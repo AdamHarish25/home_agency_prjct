@@ -75,9 +75,10 @@ let VideoPlayer = ({ src = "", size = "w-[400px] h-[400px]" }) => {
   var handleSeekMove = (e) => {
     videoRef.current.currentTime = e.target.value;
 
-    setProgress(e.target.value);
+    setProgress((e.target.value / videoTime) * 100);
 
     console.log(e.target.value);
+    console.log(progress);
   };
 
   var handleVideoPlay = () => {
@@ -91,7 +92,6 @@ let VideoPlayer = ({ src = "", size = "w-[400px] h-[400px]" }) => {
     setPlaying(false);
   };
 
-  console.log(videoDuration(videoTime));
 
   return (
     <div

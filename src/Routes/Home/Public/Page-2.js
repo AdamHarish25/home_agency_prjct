@@ -8,7 +8,7 @@ const PubHPage2 = () => {
       container: "w-screen h-auto p-10 grid place-items-center bg-light-creme",
       listBox: "flex items-center py-10 w-fit justify-center gap-20 list-none",
       verticalListBox:
-        "flex flex-col items-center border-b border-b-dark-creme",
+        "flex flex-col items-center",
     };
 
     const Data = DataStorage.PublicHome.page_2;
@@ -41,7 +41,7 @@ const PubHPage2 = () => {
             </ul>
           </div>
         ) : (
-          <ul className={`${className.listBox} border-b border-b-dark-creme`}>
+          <ul className={className.listBox}>
             {Data.map((data, index) => (
               <li key={index}>
                 <img src={data.img} alt={data.title} />
@@ -49,6 +49,10 @@ const PubHPage2 = () => {
             ))}
           </ul>
         )}
+
+        <div className="w-full px-20">
+          <hr className="border-dark-creme" />
+        </div>
       </div>
     );
 }

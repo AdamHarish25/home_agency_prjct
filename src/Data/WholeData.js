@@ -13,6 +13,15 @@ import pubImg3 from '../Attachments/Image/PublicHome/pubImg3.svg';
 import video1 from '../Attachments/Video/video.mp4'
 import check from '../Attachments/Image/PublicHome/check.svg';
 import pubImg4 from '../Attachments/Image/PublicHome/pubImg4.svg';
+import pubImg4_2 from "../Attachments/Image/PublicHome/pubImg4-2.svg";
+
+import pubImg5 from "../Attachments/Image/PublicHome/pubImg5.svg";
+import pubImg5_2 from "../Attachments/Image/PublicHome/pubImg5-2.svg";
+import pubList5_1 from '../Attachments/Image/PublicHome/Pub5List/list1.svg';
+import pubList5_2 from '../Attachments/Image/PublicHome/Pub5List/list2.svg';
+import pubList5_3 from '../Attachments/Image/PublicHome/Pub5List/list3.svg';
+
+
 
 const DataStorage = {
   Navbar: {
@@ -152,7 +161,72 @@ const DataStorage = {
       ],
       img: pubImg4,
 
+      header3: "FEATURES",
+      subtitle3: "Long run, and work as an extension of the merchant's team.",
+      button: {
+        title: "Read More",
+        link: "/",
+      },
+      list2: [
+        {
+          img: pubImg4_2,
+          title: "Professional",
+          subtitle: "Full service range including technical skills, design.",
+          color: "bg-[#FFFFFF] border-[#F3D1BF] shadow-xl",
+        },
+        {
+          img: "",
+          title: "Accessibility",
+          subtitle: "Business understanding, ability to put themselves.",
+          color: "border-[#F3D1BF] bg-transparent shadow-none",
+        },
+      ],
+    },
 
+    page_5: {
+      header: "SERVICE",
+
+      title1: "Making Complex Digital Products",
+      img: pubImg5,
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business.",
+      customer: {
+        img: pubImg5_2,
+        quote: `"Understanding, ability to put themselves in the merchant's shoes. It is meant to partner."`,
+        name: "Jenny Murtaugh",
+      },
+      button: {
+        title: "Explore",
+        link: "/",
+      },
+
+      title2: "How Our Agency Can Help",
+      list: [
+        {
+          img: pubList5_1,
+          title: "Design",
+          subtitle:
+            "Agency provides a full service range including technical skills, design.",
+          buttonTitle: "Learn More",
+          buttonLink: "/",
+        },
+        {
+          img: pubList5_2,
+          title: "Development",
+          subtitle:
+            "Full service range including technical skills, design, business.",
+          buttonTitle: "Discover More",
+          buttonLink: "/",
+        },
+        {
+          img: pubList5_3,
+          title: "Marketing",
+          subtitle:
+            "Technical skills, design, business understanding, ability.",
+          buttonTitle: "Explore Now",
+          buttonLink: "/",
+        },
+      ],
     },
   },
 };

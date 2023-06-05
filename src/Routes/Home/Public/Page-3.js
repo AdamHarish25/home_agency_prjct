@@ -8,18 +8,18 @@ const PubHPage3 = () => {
 
   const className = {
     container:
-      "w-screen bg-light-creme h-auto px-10 py-20 border-b border-b-dark-creme space-y-20 font-Epilogue",
+      "w-screen bg-light-creme h-auto px-10 py-20 space-y-20 font-Epilogue",
     box1: "w-full grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center text-dark-brown",
     innerBox: "space-y-7 px-10",
     header: "text-light-accent font-light",
     title: "text-3xl md:text-5xl font-bold",
     sub: "text-lg",
     paragraph: "text-dark-brown/60",
-    button1:
+    button:
       "px-5 py-2 text-dark-brown rounded-lg bg-white block w-fit text-xs font-semibold shadow-sm hover:shadow-md transition-shadow duration-200",
     list1Box: "w-full px-10 grid grid-cols-1 lg:grid-cols-3 list-none",
     list1: `w-full h-full border border-dark-creme space-y-3 p-10 ${
-      viewport.innerWidth < 1025
+      viewport.innerWidth < 1024
         ? "last-of-type:rounded-b-lg first-of-type:rounded-t-lg"
         : "last-of-type:rounded-r-lg first-of-type:rounded-l-lg"
     }`,
@@ -42,7 +42,7 @@ const PubHPage3 = () => {
           <h4 className={className.sub}>{Data.sub}</h4>
           <p className={className.paragraph}>{Data.paragraph1}</p>
 
-          <Link to={Data.button1.link} className={className.button1}>
+          <Link to={Data.button1.link} className={className.button}>
             {Data.button1.title}
           </Link>
         </div>
@@ -78,6 +78,10 @@ const PubHPage3 = () => {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="w-full px-20">
+        <hr className="border-dark-creme" />
       </div>
     </div>
   );
