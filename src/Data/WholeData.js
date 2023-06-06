@@ -21,6 +21,12 @@ import pubList5_1 from '../Attachments/Image/PublicHome/Pub5List/list1.svg';
 import pubList5_2 from '../Attachments/Image/PublicHome/Pub5List/list2.svg';
 import pubList5_3 from '../Attachments/Image/PublicHome/Pub5List/list3.svg';
 
+import pubList6_1 from '../Attachments/Image/PublicHome/Pub6List/list1.svg';
+import pubList6_2 from "../Attachments/Image/PublicHome/Pub6List/list2.svg";
+import pubList6_3 from "../Attachments/Image/PublicHome/Pub6List/list3.svg";
+import pubList6_4 from "../Attachments/Image/PublicHome/Pub6List/list4.svg";
+
+
 
 
 const DataStorage = {
@@ -227,6 +233,69 @@ const DataStorage = {
           buttonLink: "/",
         },
       ],
+    },
+
+    page_6: {
+      header: "Portfolio",
+      title: "Latest Work",
+
+      gridList: [
+        {
+          img: pubList6_1,
+          size: "col-start-1 row-start-1",
+          title: "Sofa",
+          tag: "Design",
+        },
+
+        {
+          img: pubList6_2,
+          size: "col-start-2 col-end-4 row-start-1",
+          title: "Keyboard",
+          tag: "Branding",
+        },
+
+        {
+          img: pubList6_3,
+          size: "col-start-1 col-end-3 row-start-2",
+          title: "Work Media",
+          tag: "Illustration",
+        },
+
+        {
+          img: pubList6_4,
+          size: "col-start-3 row-start-2",
+          title: "DDDone",
+          tag: "Motion",
+        },
+      ],
+
+      filterList: [
+        {
+          title: "Show All",
+          filter: "All",
+        },
+        {
+          title: "Design",
+          filter: "Design",
+        },
+        {
+          title: "Branding",
+          filter: "Branding",
+        },
+        {
+          title: "Illustration",
+          filter: "Illustration",
+        },
+        {
+          title: "Motion",
+          filter: "Motion",
+        },
+      ],
+
+      button: {
+        link: "/",
+        title: "Explore more",
+      }
     },
   },
 };
