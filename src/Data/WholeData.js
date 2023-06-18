@@ -25,7 +25,18 @@ import pubList6_1 from '../Attachments/Image/PublicHome/Pub6List/list1.svg';
 import pubList6_2 from "../Attachments/Image/PublicHome/Pub6List/list2.svg";
 import pubList6_3 from "../Attachments/Image/PublicHome/Pub6List/list3.svg";
 import pubList6_4 from "../Attachments/Image/PublicHome/Pub6List/list4.svg";
+import pubImg6 from "../Attachments/Image/PublicHome/pubImg6.png";
+import pubImg6_2 from "../Attachments/Image/PublicHome/pubImg6-2.png";
+import pubImg6_3 from "../Attachments/Image/PublicHome/pubImg6-3.png";
 
+import pubCarItem1 from '../Attachments/Image/PublicHome/Pub8Carousel/item1.png';
+import pubCarItem2 from "../Attachments/Image/PublicHome/Pub8Carousel/item2.png";
+import pubCarItem3 from "../Attachments/Image/PublicHome/Pub8Carousel/item3.png";
+import pubCarItem4 from "../Attachments/Image/PublicHome/Pub8Carousel/item4.png";
+import pubCarItem5 from "../Attachments/Image/PublicHome/Pub8Carousel/item5.png";
+
+import pubImg9 from '../Attachments/Image/PublicHome/pubImg9.png';
+import pubImg9_2 from "../Attachments/Image/PublicHome/quote.png";
 
 
 
@@ -295,8 +306,127 @@ const DataStorage = {
       button: {
         link: "/",
         title: "Explore more",
-      }
+      },
+
+      banner: {
+        header: "Get started",
+        title: "We Help Companies Move Faster",
+        button: "Contact Us",
+        img1: pubImg6,
+        img2: pubImg6_2,
+        img3: pubImg6_3,
+      },
     },
+
+    page_7: {
+      header: "Events",
+      title: "Explore Future Conferences",
+
+      list: [
+        {
+          date: "3",
+          year: "2021",
+          month: "November",
+          timeDuration: "9:00 am - 3:00 pm",
+          title: "Design Weeks",
+          subtitle:
+            "Digital agency is a business you hire to outsource your digital.",
+          button: {
+            title: "Explore Now",
+            link: "/",
+          },
+        },
+        {
+          date: "15",
+          year: "2021",
+          month: "November",
+          timeDuration: "1:00 pm - 8:00 pm",
+          title: "Interior Design",
+          subtitle: "Marketing efforts, instead of handling in-house.",
+          button: {
+            title: "Explore Now",
+            link: "/",
+          },
+        },
+        {
+          date: "2",
+          year: "2021",
+          month: "December",
+          timeDuration: "10:00 am - 2:00 pm",
+          title: "The F design events",
+          subtitle:
+            "Provide your business with a variety of digital solutions to promote.",
+          button: {
+            title: "Explore Now",
+            link: "/",
+          },
+        },
+      ],
+
+      button: {
+        title: "Explore More",
+        link: "/",
+      },
+    },
+
+    page_8: {
+      title: "Team of Designers and Developers",
+      header: "Our Team",
+
+      carousel: [
+        {
+          img: pubCarItem1,
+          name: "Azah Anyeni",
+          role: "Designer",
+        },
+        {
+          img: pubCarItem2,
+          name: "Roelof Bekkenenks",
+          role: "React Developer",
+        },
+        {
+          img: pubCarItem3,
+          name: "Leonardo Oliveira",
+          role: "Illustrator",
+        },
+        {
+          img: pubCarItem4,
+          name: "Izabella Tabakova",
+          role: "Product Designer",
+        },
+        {
+          img: pubCarItem5,
+          name: "Manilla Yadhavi",
+          role: "3D Illustrator",
+        },
+      ],
+    },
+
+    page_9: {
+      header: "Founder Words",
+      title: "Digital agency is a business you hire to outsource your digital marketing efforts",
+      background: pubImg9_2,
+
+      name: "Ren Delan",
+      role: "Founder",
+      img: pubImg9,
+    },
+
+    page_10: {
+      header: "Testimonial",
+      title: "What our Clients Saying",
+
+      button: {
+        link: "",
+        title: "",
+      },
+
+      card: [
+        {
+          
+        }
+      ]
+    }
   },
 };
 

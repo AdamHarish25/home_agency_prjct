@@ -1,0 +1,131 @@
+.carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-content-wrapper {
+  padding: 5rem 0rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-content::-webkit-scrollbar,
+.carousel-content::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-content {
+  display: flex;
+  transition: all 250ms linear;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-content > * {
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  user-select: none;
+}
+
+.carousel-content.shows-1 > * {
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.carousel-content.shows-2 > * {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel-content.shows-3 > * {
+  width: calc(100% / 3);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel-content.shows-4 > * {
+  width: calc(100% / 4);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel-content.shows-5 > * {
+  width: calc(100% / 5);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.right-arrow,
+.left-arrow {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  background-color: transparent !important;
+  opacity: 0.2;
+  cursor: default;
+  color: white;
+  border: 1px gray solid;
+  border-radius: 100%;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  --tw-translate-x: -50% !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px gray solid ;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.carousel-indicator:hover {
+  background-color: #ef6c589c;
+  border: 0px;
+}
+
+.carousel-indicator.active {
+  background-color: #EF6D58;
+  border: 0px;
+}
+
+.button-box {
+  position: absolute;
+  right: 4rem;
+  top: 0;
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-box.hidden {
+    display: none;
+}

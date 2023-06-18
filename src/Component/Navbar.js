@@ -25,8 +25,8 @@ const Navbar = () => {
     buttonLink:
       "px-10 w-fit h-fit block py-4 border-2 rounded-lg text-white bg-transparent border-white/25",
     sidebarToggle:
-      `text-xl p-3 rounded-md border border-white/30 text-white z-20 ${isOpen ? "fixed" : "static"} right-5`,
-    sidebar: `inset-y-0 right-0 w-full fixed bg-dark-purple/60 shadow-xl z-10 p-14 backdrop-blur-sm ${
+      `text-xl p-3 rounded-md border border-white/30 text-white z-[120] ${isOpen ? "fixed" : "static"} right-5`,
+    sidebar: `inset-y-0 right-0 w-full fixed bg-dark-purple/60 shadow-xl z-[100] p-14 backdrop-blur-sm ${
       isOpen
         ? "translate-x-0 text-opacity-100"
         : "translate-x-full text-opacity-0"
