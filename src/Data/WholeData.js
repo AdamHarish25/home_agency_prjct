@@ -1,27 +1,27 @@
-import pubImg1 from '../Attachments/Image/PublicHome/pubImg1.svg';
+import pubImg1 from "../Attachments/Image/PublicHome/pubImg1.svg";
 import companyPubH1 from "../Attachments/Image/PublicHome/pubCompany1.svg";
-import logo from '../Attachments/Image/logo.svg';
+import logo from "../Attachments/Image/logo.svg";
 
-import logo1 from '../Attachments/Image/PublicHome/Logos/logo1.svg'
+import logo1 from "../Attachments/Image/PublicHome/Logos/logo1.svg";
 import logo2 from "../Attachments/Image/PublicHome/Logos/logo2.svg";
 import logo3 from "../Attachments/Image/PublicHome/Logos/logo3.svg";
 import logo4 from "../Attachments/Image/PublicHome/Logos/logo4.svg";
 import logo5 from "../Attachments/Image/PublicHome/Logos/logo5.svg";
 
-import pubImg3 from '../Attachments/Image/PublicHome/pubImg3.svg';
+import pubImg3 from "../Attachments/Image/PublicHome/pubImg3.svg";
 
-import video1 from '../Attachments/Video/video.mp4'
-import check from '../Attachments/Image/PublicHome/check.svg';
-import pubImg4 from '../Attachments/Image/PublicHome/pubImg4.svg';
+import video1 from "../Attachments/Video/video.mp4";
+import check from "../Attachments/Image/PublicHome/check.svg";
+import pubImg4 from "../Attachments/Image/PublicHome/pubImg4.svg";
 import pubImg4_2 from "../Attachments/Image/PublicHome/pubImg4-2.svg";
 
 import pubImg5 from "../Attachments/Image/PublicHome/pubImg5.svg";
 import pubImg5_2 from "../Attachments/Image/PublicHome/pubImg5-2.svg";
-import pubList5_1 from '../Attachments/Image/PublicHome/Pub5List/list1.svg';
-import pubList5_2 from '../Attachments/Image/PublicHome/Pub5List/list2.svg';
-import pubList5_3 from '../Attachments/Image/PublicHome/Pub5List/list3.svg';
+import pubList5_1 from "../Attachments/Image/PublicHome/Pub5List/list1.svg";
+import pubList5_2 from "../Attachments/Image/PublicHome/Pub5List/list2.svg";
+import pubList5_3 from "../Attachments/Image/PublicHome/Pub5List/list3.svg";
 
-import pubList6_1 from '../Attachments/Image/PublicHome/Pub6List/list1.svg';
+import pubList6_1 from "../Attachments/Image/PublicHome/Pub6List/list1.svg";
 import pubList6_2 from "../Attachments/Image/PublicHome/Pub6List/list2.svg";
 import pubList6_3 from "../Attachments/Image/PublicHome/Pub6List/list3.svg";
 import pubList6_4 from "../Attachments/Image/PublicHome/Pub6List/list4.svg";
@@ -29,16 +29,14 @@ import pubImg6 from "../Attachments/Image/PublicHome/pubImg6.png";
 import pubImg6_2 from "../Attachments/Image/PublicHome/pubImg6-2.png";
 import pubImg6_3 from "../Attachments/Image/PublicHome/pubImg6-3.png";
 
-import pubCarItem1 from '../Attachments/Image/PublicHome/Pub8Carousel/item1.png';
+import pubCarItem1 from "../Attachments/Image/PublicHome/Pub8Carousel/item1.png";
 import pubCarItem2 from "../Attachments/Image/PublicHome/Pub8Carousel/item2.png";
 import pubCarItem3 from "../Attachments/Image/PublicHome/Pub8Carousel/item3.png";
 import pubCarItem4 from "../Attachments/Image/PublicHome/Pub8Carousel/item4.png";
 import pubCarItem5 from "../Attachments/Image/PublicHome/Pub8Carousel/item5.png";
 
-import pubImg9 from '../Attachments/Image/PublicHome/pubImg9.png';
+import pubImg9 from "../Attachments/Image/PublicHome/pubImg9.png";
 import pubImg9_2 from "../Attachments/Image/PublicHome/quote.png";
-
-
 
 const DataStorage = {
   Navbar: {
@@ -404,7 +402,8 @@ const DataStorage = {
 
     page_9: {
       header: "Founder Words",
-      title: "Digital agency is a business you hire to outsource your digital marketing efforts",
+      title:
+        "Digital agency is a business you hire to outsource your digital marketing efforts",
       background: pubImg9_2,
 
       name: "Ren Delan",
@@ -418,17 +417,45 @@ const DataStorage = {
 
       button: {
         link: "",
-        title: "",
+        title: "See All",
       },
 
       card: [
         {
-          
-        }
-      ]
-    }
+          rating: 5, // max 5 and round value only, ex: 4 
+
+          comment: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. 
+          They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+          name: "Alan Marti",
+          company: "Meta.inc",
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4 
+
+          comment: `Provide your business with a variety of digital solutions to promote your product or service online.`,
+          name: "Richardo Kann",
+          company: "Photogram",
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4 
+
+          comment: `Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.`,
+          name: "Graham Griffiths",
+          company: "Twitor",
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4 
+
+          comment: `Promote your product or service online and help you hit your marketing goals and grow your business.`,
+          name: "Maria Trofimova",
+          company: "Whochat",
+        },
+      ],
+    },
   },
 };
-
 
 export { DataStorage };

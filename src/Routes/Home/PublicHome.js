@@ -19,7 +19,9 @@ const PublicHome = () => {
 
   return (
     <div className={className.container}>
-      <PubHPage1 />
+      <div className={className.darkBox}>
+        <PubHPage1 />
+      </div>
       <PubHPage2 />
       <PubHPage3 />
       <PubHPage4 />

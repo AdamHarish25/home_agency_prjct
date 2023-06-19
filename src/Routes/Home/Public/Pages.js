@@ -13,7 +13,7 @@ import Carousel from "../../../Component/Carousel/Carousel";
 export const PubHPage1 = () => {
   const className = {
     container:
-      "w-screen h-auto py-32 px-10 xl:px-20 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 bg-dark-purple font-Epilogue",
+      "w-screen h-auto py-32 px-10 xl:px-20 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 font-Epilogue",
     img: "order-1 lg:order-2",
     paragraphBox:
       "h-full flex flex-col justify-center items-center gap-16 w-full relative px-0 xl:px-20 order-2 lg:order-1",
@@ -395,7 +395,7 @@ export const PubHPage6 = () => {
 
   const className = {
     container:
-      "w-screen h-auto bg-dark-purple flex flex-col items-center py-10 px-4 lg:px-14 xl:px-28 gap-20 font-Epilogue",
+      "w-screen h-auto flex flex-col items-center py-10 px-4 lg:px-14 xl:px-28 gap-20 font-Epilogue",
       
     header: "text-light-accent font-light",
     title: "text-3xl md:text-4xl font-bold text-white", 
@@ -547,7 +547,7 @@ export const PubHPage6 = () => {
 export const PubHPage7 = () => {
 
     const className = {
-      container: "space-y-10 w-screen p-10 bg-dark-purple",
+      container: "space-y-10 w-screen p-10",
       header: "text-light-accent font-light",
       headerBox: "text-center space-y-5",
       title: "text-3xl md:text-5xl font-bold text-white xl:px-[450px]",
@@ -609,8 +609,8 @@ export const PubHPage7 = () => {
 export const PubHPage8 = () => {
     const className = {
       container:
-        "w-screen h-auto py-0 px-5 lg:p-10 space-y-7 relative font-Epilogue bg-dark-purple text-white",
-      headerBox: "pr-10 static lg:absolute top-2 left-20 space-y-4",
+        "w-screen h-auto py-0 px-5 lg:p-10 space-y-7 relative font-Epilogue text-white",
+      headerBox: "pr-10 static pl-10 lg:pl-0 lg:absolute top-2 left-20 space-y-4",
       header: "text-light-accent",
       title: "text-4xl font-bold",
       carouselBox: "px-5 lg:px-10 py-10",
@@ -659,7 +659,7 @@ export const PubHPage8 = () => {
 export const PubHPage9 = () => {
     const className = {
       container:
-        "w-full grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10 text-white py-10  px-5",
+        "w-full grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10 text-white py-10 px-10",
       contentBox: "relative flex flex-col justify-center items-start gap-5 h-full",
       background: "absolute right-10 top-5 opacity-50",
       header: "text-light-accent z-20",
@@ -696,10 +696,35 @@ export const PubHPage9 = () => {
 
 export const PubHPage10 = () => {
   const className = {
-    container: "",
+    container:
+      "w-full bg-light-creme flex flex-col items-center gap-6 pt-20 p-10",
+    header: "text-light-accent",
+    title: "text-4xl font-bold text-dark-brown w-auto lg:w-96",
+    headerBox: "text-center space-y-4",
   };
 
-  return <div className={className.container}></div>;
+  const Data = DataStorage.PublicHome.page_10;
+
+  return <div className={className.container}>
+    <div className={className.headerBox}>
+      <h4 className={className.header}>
+        {Data.header}
+      </h4>
+
+      <h1 className={className.title}>
+        {Data.title}
+      </h1>
+    </div>
+
+    <div className="w-full grid grid-cols-1 grid-rows-5 lg:grid-rows-3 lg:grid-cols-2 ">
+      {Data.card.map((data, index) => (
+        <div key={index} className="w-full bg-transparent border border-dark-creme">
+
+        </div>
+      ))}
+    </div>
+
+  </div>;
 };
 
 
