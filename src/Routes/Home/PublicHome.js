@@ -14,6 +14,7 @@ import {
   PubHPage13,
   PubHPage14,
   PubHPage15,
+  PubHPage16,
 } from "../Home/Public/Pages";
 
 const PublicHome = () => {
@@ -43,6 +44,7 @@ const PublicHome = () => {
       <PubHPage13 />
       <PubHPage14 />
       <PubHPage15 />
+      <PubHPage16 />
     </div>
   );
 };

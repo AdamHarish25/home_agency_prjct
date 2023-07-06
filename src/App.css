@@ -978,6 +978,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
 .flex-col{
   flex-direction: column !important;
 }
@@ -1298,6 +1302,14 @@ video {
   padding: 2rem !important;
 }
 
+.p-20{
+  padding: 5rem !important;
+}
+
+.p-2{
+  padding: 0.5rem !important;
+}
+
 .px-0{
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -1530,6 +1542,22 @@ video {
   color: rgb(255 255 255 / 0.64) !important;
 }
 
+.text-gray-500\/60{
+  color: rgb(107 114 128 / 0.6) !important;
+}
+
+.text-gray-400\/60{
+  color: rgb(156 163 175 / 0.6) !important;
+}
+
+.text-gray-300\/60{
+  color: rgb(209 213 219 / 0.6) !important;
+}
+
+.text-white\/60{
+  color: rgb(255 255 255 / 0.6) !important;
+}
+
 .text-opacity-0{
   --tw-text-opacity: 0 !important;
 }
@@ -1719,6 +1747,11 @@ video {
     font-size: 3rem !important;
     line-height: 1 !important;
   }
+
+  .md\:text-3xl{
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1792,6 +1825,10 @@ video {
     padding: 2.5rem !important;
   }
 
+  .lg\:p-32{
+    padding: 8rem !important;
+  }
+
   .lg\:px-0{
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -1847,6 +1884,11 @@ video {
 
   .lg\:text-\[58px\]{
     font-size: 58px !important;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem !important;
+    line-height: 1 !important;
   }
 }
 

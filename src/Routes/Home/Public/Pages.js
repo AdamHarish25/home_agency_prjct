@@ -12,6 +12,8 @@ import Map from "../../../Component/Map/Map";
 
 // To search things press "Ctrl" + "F" simultaneously
 
+const Database = DataStorage.PublicHome;
+
 export const PubHPage1 = () => {
   const className = {
     container:
@@ -33,7 +35,7 @@ export const PubHPage1 = () => {
     fbCompany: "text-white",
   };
 
-  const Data = DataStorage.PublicHome.page_1;
+  const Data = Database.page_1;
 
   return (
     <div className={className.container}>
@@ -75,7 +77,7 @@ export const PubHPage2 = () => {
     verticalListBox: "flex flex-col items-center",
   };
 
-  const Data = DataStorage.PublicHome.page_2;
+  const Data = Database.page_2;
   const Viewport = useViewport().windowSize;
 
   return (
@@ -148,7 +150,7 @@ export const PubHPage3 = () => {
     list2Title: "font-semibold",
   };
 
-  var Data = DataStorage.PublicHome.page_3;
+  var Data = Database.page_3;
 
   return (
     <div className={className.container}>
@@ -224,7 +226,7 @@ export const PubHPage4 = () => {
     LHCTitle: "text-lg font-medium",
   };
 
-  var Data = DataStorage.PublicHome.page_4;
+  var Data = Database.page_4;
 
   return (
     <div className={className.container}>
@@ -316,7 +318,7 @@ export const PubHPage5 = () => {
     customerName: "text-sm",
   };
 
-  var Data = DataStorage.PublicHome.page_5;
+  var Data = Database.page_5;
 
   return (
     <div className={className.container}>
@@ -415,7 +417,7 @@ export const PubHPage6 = () => {
       "bg-light-accent text-white font-bold px-5 py-3 block w-fit rounded-lg",
   };
 
-  const Data = DataStorage.PublicHome.page_6;
+  const Data = Database.page_6;
 
   const DataLength = (filt) =>
     Data.gridList.map((data) => data.tag).filter((tag) => tag === filt).length;
@@ -542,7 +544,7 @@ export const PubHPage7 = () => {
     buttonIn: "block w-fit",
   };
 
-  const Data = DataStorage.PublicHome.page_7;
+  const Data = Database.page_7;
 
   return (
     <div className={className.container}>
@@ -605,7 +607,7 @@ export const PubHPage8 = () => {
     roleCard: "text-gray-400",
   };
 
-  var Data = DataStorage.PublicHome.page_8;
+  var Data = Database.page_8;
 
   return (
     <div className={className.container}>
@@ -653,7 +655,7 @@ export const PubHPage9 = () => {
     infoRole: "text-xs text-gray-500",
   };
 
-  const Data = DataStorage.PublicHome.page_9;
+  const Data = Database.page_9;
 
   return (
     <div className={className.container}>
@@ -696,7 +698,7 @@ export const PubHPage10 = () => {
     button: "bg-white rounded-lg block w-fit px-10 py-3 font-bold shadow-md",
   };
 
-  const Data = DataStorage.PublicHome.page_10;
+  const Data = Database.page_10;
 
   return (
     <div className={className.container}>
@@ -756,7 +758,7 @@ export const PubHPage11 = () => {
     cardButton: "w-fit block px-10 py-3 font-bold rounded-lg shadow-md",
   };
 
-  const Data = DataStorage.PublicHome.page_11;
+  const Data = Database.page_11;
 
   return (
     <div className={className.container}>
@@ -836,7 +838,7 @@ export const PubHPage12 = () => {
     link: "block w-fit",
   };
 
-  const Data = DataStorage.PublicHome.page_12;
+  const Data = Database.page_12;
 
   return (
     <div className={className.container}>
@@ -875,7 +877,7 @@ export const PubHPage13 = () => {
     button: "block w-fit hover:underline",
   };
 
-  const Data = DataStorage.PublicHome.page_13;
+  const Data = Database.page_13;
 
   return (
     <div className={className.container}>
@@ -942,7 +944,7 @@ export const PubHPage14 = () => {
     border: "border-dark-creme",
   };
 
-  var Data = DataStorage.PublicHome.page_14;
+  var Data = Database.page_14;
 
   var navigateTo = useNavigate();
 
@@ -1001,10 +1003,23 @@ export const PubHPage15 = () => {
         "p-3 placeholder-gray-500 border border-dark-creme rounded-lg w-full outline-none",
       resizableInput:
         "p-3 placeholder-gray-500 border border-dark-creme rounded-lg w-full outline-none h-[130px]",
-      button2: "px-5 py-3 font-bold rounded-md gap-4 bg-light-accent text-white",
+      button2:
+        "px-5 py-3 font-bold rounded-md gap-4 bg-light-accent text-white",
+      map: "w-full h-[600px] border-none",
+      floatingCardForm:
+        "absolute right-20 top-2/4 -translate-y-2/4 p-10 space-y-5 bg-white w-[400px] rounded-md",
+      form2: "space-y-5",
+      cardForm: "p-10 space-y-5 bg-white w-[400px] rounded-md",
+      mobileFormContainer: "w-full flex flex-col items-center gap-10",
+      desktopFormContainer: "w-full relative",
+
+      infosContainer: "w-full grid grid-cols-1 lg:grid-cols-3 px-10",
+      infoCard: "space-y-6 py-5 px-8 border border-dark-creme",
+      infoTitleCard: "flex items-center gap-4",
+      infoTitle: "text-lg text-light-accent font-light",
     };
 
-    const Data = DataStorage.PublicHome.page_15;
+    const Data = Database.page_15;
 
     const markerPosition = { lat: -6.225850289274498, lng: 107.00105493760948 };
 
@@ -1026,7 +1041,7 @@ export const PubHPage15 = () => {
         </div>
 
         {viewport.innerWidth >= 870 ? (
-          <div className="w-full relative">
+          <div className={className.desktopFormContainer}>
             {/* <Map
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCAaaq804q-woCIcHTSYFDDO70hG1lbMNE`}
               loadingElement={<div style={{ height: "600px" }} />}
@@ -1038,15 +1053,15 @@ export const PubHPage15 = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.659934808637!2d106.99968742176348!3d-6.225955637151516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c71cf814d97%3A0xd22a5d56809f070a!2sSummarecon%20Mall%20Bekasi!5e0!3m2!1sen!2sid!4v1688612059501!5m2!1sen!2sid"
               allowFullScreen=""
-              className={"w-full h-[600px] border-none"}
+              className={className.map}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
 
-            <div className="absolute right-20 top-2/4 -translate-y-2/4 p-10 space-y-5 bg-white w-[400px] rounded-md">
+            <div className={className.floatingCardForm}>
               <h1 className={className.title2}>{Data.title2}</h1>
 
-              <form className="space-y-5">
+              <form className={className.form2}>
                 {Array.from({ length: 2 }).map((_, index) => (
                   <input
                     key={index}
@@ -1072,11 +1087,11 @@ export const PubHPage15 = () => {
             </div>
           </div> //Desktop View Map
         ) : (
-          <div className="w-full flex flex-col items-center gap-10">
-            <div className="p-10 space-y-5 bg-white w-[400px] rounded-md">
+          <div className={className.mobileFormContainer}>
+            <div className={className.cardForm}>
               <h1 className={className.title2}>{Data.title2}</h1>
 
-              <form className="space-y-5">
+              <form className={className.form2}>
                 {Array.from({ length: 2 }).map((_, index) => (
                   <input
                     key={index}
@@ -1112,22 +1127,22 @@ export const PubHPage15 = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.659934808637!2d106.99968742176348!3d-6.225955637151516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c71cf814d97%3A0xd22a5d56809f070a!2sSummarecon%20Mall%20Bekasi!5e0!3m2!1sen!2sid!4v1688612059501!5m2!1sen!2sid"
               allowFullScreen=""
-              className={"w-full h-[600px] border-none"}
+              className={className.map}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div> //Mobile View Map
         )}
 
-        <div className="w-full grid grid-cols-1 lg:grid-cols-3 px-10">
+        <div className={className.infosContainer}>
           {Data.list.map((data, index) => (
             <div
               key={index}
-              className="space-y-6 py-5 px-8 border border-dark-creme"
+              className={className.infoCard}
             >
-              <div className="flex items-center gap-4">
+              <div className={className.infoTitleCard}>
                 <img src={data.icon} alt="" />
-                <p className="text-lg text-light-accent font-light">
+                <p className={className.infoTitle}>
                   {data.title}
                 </p>
               </div>
@@ -1139,3 +1154,41 @@ export const PubHPage15 = () => {
       </div>
     );
 }
+
+
+export const PubHPage16 = () => {
+
+  const className = {
+    container: "w-full p-10 lg:p-32",
+    innerBox: "place-items-center grid grid-cols-1 gap-7 lg:grid-cols-2 bg-light-accent p-20 rounded-md",
+    headerBox: "space-y-5 order-2 lg:order-1",
+    title: "text-3xl md:text-4xl lg:text-6xl font-bold text-white",
+    subtitle: "text-white/60",
+    button: "block w-fit px-8 py-3 bg-white text-dark-brown rounded-xl",
+    img: "order-1 lg:order-2",
+
+  };
+
+  const Data = Database.page_16;
+
+  return (
+    <div className={className.container}>
+      <div className={className.innerBox}>
+        <div className={className.headerBox}>
+          <h1 className={className.title}>{Data.title}</h1>
+          <p className={className.subtitle}>
+            {Data.subtitle}
+          </p>
+
+          <Link to={Data.button.link} className={className.button}>
+            {Data.button.title}
+          </Link>
+        </div>
+
+        <img src={Data.img} alt="" className={className.img}/>
+      </div>
+    </div>
+  );
+
+}
+

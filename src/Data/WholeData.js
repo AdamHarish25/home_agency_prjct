@@ -38,25 +38,26 @@ import pubCarItem5 from "../Attachments/Image/PublicHome/Pub8Carousel/item5.png"
 import pubImg9 from "../Attachments/Image/PublicHome/pubImg9.png";
 import pubImg9_2 from "../Attachments/Image/PublicHome/quote.png";
 
-import publist10_1 from '../Attachments/Image/PublicHome/Pub10List/list1.png';
+import publist10_1 from "../Attachments/Image/PublicHome/Pub10List/list1.png";
 import publist10_2 from "../Attachments/Image/PublicHome/Pub10List/list2.png";
 import publist10_3 from "../Attachments/Image/PublicHome/Pub10List/list3.png";
 import publist10_4 from "../Attachments/Image/PublicHome/Pub10List/list4.png";
 
-import PubLogo13_1 from '../Attachments/Image/PublicHome/Pub13List/logo1.png';
+import PubLogo13_1 from "../Attachments/Image/PublicHome/Pub13List/logo1.png";
 import PubLogo13_2 from "../Attachments/Image/PublicHome/Pub13List/logo2.png";
 import PubLogo13_3 from "../Attachments/Image/PublicHome/Pub13List/logo3.png";
 
-import PubList14_1 from '../Attachments/Image/PublicHome/Pub14List/list1.png';
+import PubList14_1 from "../Attachments/Image/PublicHome/Pub14List/list1.png";
 import PubList14_2 from "../Attachments/Image/PublicHome/Pub14List/list2.png";
 import PubList14_3 from "../Attachments/Image/PublicHome/Pub14List/list3.png";
 
-import PubList15_1 from '../Attachments/Image/PublicHome/Pub15List/list1.svg'
+import PubList15_1 from "../Attachments/Image/PublicHome/Pub15List/list1.svg";
 import PubList15_2 from "../Attachments/Image/PublicHome/Pub15List/list2.svg";
 import PubList15_3 from "../Attachments/Image/PublicHome/Pub15List/list3.svg";
 
+import PubImg16 from "../Attachments/Image/PublicHome/Pub16Img.png";
 
-
+import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 const DataStorage = {
   Navbar: {
@@ -711,7 +712,7 @@ const DataStorage = {
     },
 
     page_16: {
-      img: "",
+      img: PubImg16,
       title: "We’re Help To Build Your Dream Project",
       subtitle:
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
@@ -720,6 +721,53 @@ const DataStorage = {
         link: "/",
       },
     },
+  },
+
+  footer: {
+    title: "",
+
+    menuTitle1: "Menu",
+    menu1: [
+      {
+        title: "About",
+      },
+      {
+        title: "Services",
+      },
+      {
+        title: "Blog",
+      },
+      {
+        title: "Contact",
+      },
+    ],
+
+    menuTitle2: "Service",
+    menu2: [
+      {
+        title: "Design",
+      },
+      {
+        title: "Development",
+      },
+      {
+        title: "Marketing",
+      },
+    ],
+
+    socialList: [
+      {
+        icon: <FaFacebookF />,
+      },
+
+      {
+        icon: <FaTwitter />,
+      },
+
+      {
+        icon: <FaInstagram />,
+      },
+    ],
   },
 };
 
