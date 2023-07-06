@@ -1,11 +1,11 @@
 .rating-star {
-  display: inline-block;
+  display: inline-flex;
+  gap: 5px;
 }
 
 .star {
-  font-size: 24px;
+  font-size: 20px;
   color: #ccc;
-  cursor: pointer;
 }
 
 .filled {

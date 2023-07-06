@@ -9,11 +9,16 @@ import {
   PubHPage8,
   PubHPage9,
   PubHPage10,
+  PubHPage11,
+  PubHPage12,
+  PubHPage13,
+  PubHPage14,
+  PubHPage15,
 } from "../Home/Public/Pages";
 
 const PublicHome = () => {
   const className = {
-    container: "w-screen h-auto font-Epilogue",
+    container: "w-screen h-auto font-Epilogue bg-light-creme",
     darkBox: "bg-dark-purple w-full",
   };
 
@@ -33,6 +38,11 @@ const PublicHome = () => {
         <PubHPage9 />
       </div>
       <PubHPage10 />
+      <PubHPage11 />
+      <PubHPage12 />
+      <PubHPage13 />
+      <PubHPage14 />
+      <PubHPage15 />
     </div>
   );
 };
