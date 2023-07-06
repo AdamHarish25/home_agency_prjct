@@ -1,3 +1,4 @@
+import { Footer } from "../../Component/Footer";
 import {
   PubHPage1,
   PubHPage2,
@@ -45,6 +46,8 @@ const PublicHome = () => {
       <PubHPage14 />
       <PubHPage15 />
       <PubHPage16 />
+      
+      <Footer/>
     </div>
   );
 };

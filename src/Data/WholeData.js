@@ -724,21 +724,25 @@ const DataStorage = {
   },
 
   footer: {
-    title: "",
+    title: "Agency",
 
     menuTitle1: "Menu",
     menu1: [
       {
         title: "About",
+        link: "/About",
       },
       {
         title: "Services",
+        link: "/Services",
       },
       {
         title: "Blog",
+        link: "/Blog",
       },
       {
         title: "Contact",
+        link: "/Contact",
       },
     ],
 
@@ -746,26 +750,49 @@ const DataStorage = {
     menu2: [
       {
         title: "Design",
+        link: "/Design",
       },
       {
         title: "Development",
+        link: "/Development",
       },
       {
         title: "Marketing",
+        link: "/Marketing",
+      },
+      {
+        title: "Pricing",
+        link: "/Pricing",
       },
     ],
 
     socialList: [
       {
         icon: <FaFacebookF />,
+        link: "https://facebook.com",
       },
 
       {
         icon: <FaTwitter />,
+        link: "https://twitter.com",
       },
 
       {
         icon: <FaInstagram />,
+        link: "https://instagram.com",
+      },
+    ],
+
+    copyright: "Copyright © 2022 Laaqiq. All Rights Reserved.",
+
+    policies: [
+      {
+        title: "Terms of Use",
+        link: "/Terms",
+      },
+      {
+        title: "Privacy Policy",
+        link: "/Policy",
       },
     ],
   },

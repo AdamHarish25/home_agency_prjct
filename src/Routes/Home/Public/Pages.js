@@ -1159,7 +1159,7 @@ export const PubHPage15 = () => {
 export const PubHPage16 = () => {
 
   const className = {
-    container: "w-full p-10 lg:p-32",
+    container: "w-full p-10 py-10 lg:px-32",
     innerBox: "place-items-center grid grid-cols-1 gap-7 lg:grid-cols-2 bg-light-accent p-20 rounded-md",
     headerBox: "space-y-5 order-2 lg:order-1",
     title: "text-3xl md:text-4xl lg:text-6xl font-bold text-white",
