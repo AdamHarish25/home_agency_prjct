@@ -59,6 +59,33 @@ import PubImg16 from "../Attachments/Image/PublicHome/Pub16Img.png";
 
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
+import PersImg1 from "../Attachments/Image/PersonalHome/PersImg1.png";
+
+import PersList2_1 from "../Attachments/Image/PersonalHome/PersList_2/list1.svg";
+import PersList2_2 from "../Attachments/Image/PersonalHome/PersList_2/list2.svg";
+
+import PersList3_1 from "../Attachments/Image/PersonalHome/PersList_3/list1.png";
+import PersList3_2 from "../Attachments/Image/PersonalHome/PersList_3/list2.png";
+import PersList3_3 from "../Attachments/Image/PersonalHome/PersList_3/list3.png";
+
+import PersImg4 from "../Attachments/Image/PersonalHome/PersImg4.png";
+import PersList4_1 from "../Attachments/Image/PersonalHome/PersList_4/list1.png";
+import PersList4_2 from "../Attachments/Image/PersonalHome/PersList_4/list2.png";
+
+import PersImg5 from "../Attachments/Image/PersonalHome/PersImg5.png";
+import PersImg5_2 from "../Attachments/Image/PersonalHome/PersImg5_2.png";
+import PersImg5_3 from "../Attachments/Image/PersonalHome/PersImg5_3.png";
+
+import PersList7_1 from "../Attachments/Image/PersonalHome/PersList_7/list1.svg";
+import PersList7_2 from "../Attachments/Image/PersonalHome/PersList_7/list2.svg";
+import PersList7_3 from "../Attachments/Image/PersonalHome/PersList_7/list3.svg";
+import PersList7_4 from "../Attachments/Image/PersonalHome/PersList_7/list4.svg";
+import PersList7_5 from "../Attachments/Image/PersonalHome/PersList_7/list5.svg";
+
+import PersList8_1 from "../Attachments/Image/PersonalHome/PersList_8/list1.png";
+import PersList8_2 from "../Attachments/Image/PersonalHome/PersList_8/list2.png";
+import PersList8_3 from "../Attachments/Image/PersonalHome/PersList_8/list3.png";
+
 const DataStorage = {
   Navbar: {
     logo: logo,
@@ -438,7 +465,7 @@ const DataStorage = {
       title: "What our Clients Saying",
 
       button: {
-        link: "",
+        link: "/Testimonial",
         title: "See All",
       },
 
@@ -795,6 +822,269 @@ const DataStorage = {
         link: "/Policy",
       },
     ],
+  },
+
+  PersonalHome: {
+    page_1: {
+      header: "Gabriel Pires",
+      title: "The Simple, Clean Design",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      img: PersImg1,
+      button: {
+        title: "See My Work",
+        link: "/Work",
+      },
+    },
+
+    page_2: {
+      header: "Service",
+      title: "How I Can Help You With",
+
+      cards: [
+        {
+          icon: PersList2_1,
+          title: "Design",
+          subtitle:
+            "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+          btnTitle: "Learn More",
+          btnLink: "/Design",
+        },
+        {
+          icon: PersList2_2,
+          title: "Development",
+          subtitle:
+            "Hire to outsource your digital marketing efforts, instead of handling in-house can provide your business.",
+          btnTitle: "Learn More",
+          btnLink: "/Development",
+        },
+      ],
+
+      footer: "Want more service? ",
+      footerButton: {
+        title: "Explore Now",
+        link: "/Service",
+      },
+    },
+
+    page_3: {
+      header: "Portfolio",
+      title: "Latest Work",
+
+      button: {
+        title: "Explore More",
+        link: "/Portfolio",
+      },
+
+      cards: [
+        {
+          img: PersList3_1,
+          tag: "Design",
+          title: "SOFA",
+        },
+        {
+          img: PersList3_2,
+          tag: "Branding",
+          title: "KeyBoard",
+        },
+        {
+          img: PersList3_3,
+          tag: "Illustration",
+          title: "Work Media",
+        },
+      ],
+    },
+
+    page_4: {
+      header: "Gabriel Pires",
+      title: "Professional Web Designer",
+      subheader: "Provides a full service range",
+      subtitle:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      button: {
+        title: "About Me",
+        link: "/About",
+      },
+
+      img: PersImg4,
+
+      cards: [
+        {
+          value: "42%",
+          title: "Years of experience",
+          icon: PersList4_1,
+        },
+        {
+          value: "73+",
+          title: "Projects Done",
+          icon: PersList4_2,
+        },
+      ],
+    },
+
+    page_5: {
+      header: "Features",
+      title: "Give Your Site A New Look",
+      subtitle:
+        "Service range including technical skills, design, business understanding.",
+
+      lists: [
+        {
+          title: "Range including technical skills",
+        },
+        {
+          title: "Business understanding",
+        },
+        {
+          title: "Partner on the long run",
+        },
+      ],
+
+      img: PersImg5,
+
+      banner: {
+        img2: PersImg5_2,
+        header: "Get Started",
+        title: "I Help Companies Move Faster",
+        button: {
+          link: "/Contact",
+          title: "Contact Me",
+        },
+
+        subtitle:
+          "Put themselves in the merchant's shoes. It is meant to partner on the long run.",
+        img3: PersImg5_3,
+      },
+    },
+
+    page_6: {
+      header: "Testimonial",
+      title: "What My Clients Saying",
+
+      cards: [
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          highlight: 0,
+          comment: `Provide your business with a variety of digital solutions to promote your product or service online.`,
+          name: "Richardo Kann",
+          company: "Photogram",
+          img: publist10_2,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          highlight: 1,
+          comment: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. 
+          They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+          name: "Alan Marti",
+          company: "Meta.inc",
+          img: publist10_1,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          highlight: 0,
+          comment: `Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.`,
+          name: "Graham Griffiths",
+          company: "Twitor",
+          img: publist10_3,
+        },
+      ],
+
+      button: {
+        title: "See All",
+        link: "/Testimonial",
+      },
+    },
+
+    page_7: {
+      header: "Faq",
+      title: "Frequently Asked Questions",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+      button: {
+        title: "Contact Us",
+        link: "/",
+      },
+
+      faqs: [
+        {
+          question: "A digital agency is a business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Hire to outsource your digital",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Marketing efforts",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Can provide your business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+      ],
+
+      logos: [
+        {
+          img: PersList7_1,
+        },
+        {
+          img: PersList7_2,
+        },
+        {
+          img: PersList7_3,
+        },
+        {
+          img: PersList7_4,
+        },
+        {
+          img: PersList7_5,
+        },
+      ],
+    },
+
+    page_8: {
+      header: "Our Blog",
+      title: "Latest Blog Articles",
+      button: {
+        title: "Discover All",
+        link: "/Blog",
+      },
+
+      card1: {
+        img: PersList8_1,
+        link: "/post_1",
+        header: "Stories",
+        title: "Agency is a business you hire to outsource",
+        date: "5 Nov, 2021",
+      },
+
+      cards: [
+        {
+          img: PersList8_2,
+          link: "/post_2",
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+        },
+        {
+          img: PersList8_3,
+          link: "/post_3",
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+        },
+      ],
+    },
   },
 };
 

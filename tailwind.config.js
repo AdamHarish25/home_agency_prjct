@@ -14,7 +14,7 @@ module.exports = {
 
       md: "768px",
 
-      lg: "1024px",
+      lg: "1023px",
 
       xl: "1280px",
 
@@ -35,6 +35,7 @@ module.exports = {
         "dark-creme": "#F3D1BF",
         "dark-brown": "#391400",
         "dark-gray": "#3A3C56",
+        "gray-creme": "#F9E5DA",
       },
       backgroundImage: {
         "6-sides-star": "url('./Attachments/Image/PublicHome/pubImg1-2.svg')",

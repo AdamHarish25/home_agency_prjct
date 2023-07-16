@@ -17,7 +17,7 @@ const Database = DataStorage.PublicHome;
 export const PubHPage1 = () => {
   const className = {
     container:
-      "w-screen h-auto py-32 px-10 xl:px-20 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 font-Epilogue",
+      "w-full h-auto py-32 px-10 xl:px-20 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 font-Epilogue",
     img: "order-1 lg:order-2",
     paragraphBox:
       "h-full flex flex-col justify-center items-center gap-16 w-full relative px-0 xl:px-20 order-2 lg:order-1",

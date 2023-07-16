@@ -4,7 +4,7 @@ import { useViewport } from "./Viewport";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({title = "Agency"}) => {
   const viewport = useViewport().windowSize;
   const [isOpen, setOpen] = useState(false);
 
@@ -20,12 +20,15 @@ const Navbar = () => {
       "w-full px-20 py-5 flex items-center justify-between bg-dark-purple",
     mobileView:
       "w-full flex xl:hidden items-center justify-between bg-dark-purple py-5 px-10",
-    logo: "w-32 xl:w-40",
+    logo: "",
+    logoBox: "flex items-center gap-3",
+    logoTitle: "font-Epilogue font-semibold text-xl md:text-2xl text-white",
     list: "flex items-center justify-center gap-20 text-white",
     buttonLink:
       "px-10 w-fit h-fit block py-4 border-2 rounded-lg text-white bg-transparent border-white/25",
-    sidebarToggle:
-      `text-xl p-3 rounded-md border border-white/30 text-white z-[120] ${isOpen ? "fixed" : "static"} right-5`,
+    sidebarToggle: `text-xl p-3 rounded-md border border-white/30 text-white z-[120] ${
+      isOpen ? "fixed" : "static"
+    } right-5`,
     sidebar: `inset-y-0 right-0 w-full fixed bg-dark-purple/60 shadow-xl z-[100] p-14 backdrop-blur-sm ${
       isOpen
         ? "translate-x-0 text-opacity-100"
@@ -38,18 +41,24 @@ const Navbar = () => {
     <div className={className.container}>
       {viewport.innerWidth < 1025 ? (
         <div className={className.mobileView}>
-          <img src={Data.logo} alt="Logo" className={className.logo} />
+          <Link to={"../"} className={className.logoBox}>
+            <img src={Data.logo} alt="Logo" className={className.logo} />
+            <h1 className={className.logoTitle}>{title}</h1>
+          </Link>
 
           <button
             className={className.sidebarToggle}
             onClick={() => setOpen(!isOpen)}
           >
-            {!isOpen ? <FaBars/> : <FaTimes/>}
+            {!isOpen ? <FaBars /> : <FaTimes />}
           </button>
         </div>
       ) : (
         <div className={className.desktopView}>
-          <img src={Data.logo} alt="Logo" className={className.logo} />
+          <Link to={"../"} className={className.logoBox}>
+            <img src={Data.logo} alt="Logo" className={className.logo} />
+            <h1 className={className.logoTitle}>{title}</h1>
+          </Link>
           <ul className={className.list}>
             {Data.menus.map((data, index) => (
               <Link key={index} to={data.link}>

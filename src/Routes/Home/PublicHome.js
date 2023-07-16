@@ -1,4 +1,6 @@
+/* eslint-disable */
 import { Footer } from "../../Component/Footer";
+import Navbar from "../../Component/Navbar";
 import {
   PubHPage1,
   PubHPage2,
@@ -26,6 +28,7 @@ const PublicHome = () => {
 
   return (
     <div className={className.container}>
+      <Navbar title="Agency" />
       <div className={className.darkBox}>
         <PubHPage1 />
       </div>
@@ -46,8 +49,8 @@ const PublicHome = () => {
       <PubHPage14 />
       <PubHPage15 />
       <PubHPage16 />
-      
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };

@@ -2,18 +2,24 @@ import { Link } from "react-router-dom";
 import { DataStorage } from "../Data/WholeData";
 
 
-export const Footer = ({bgColor = "bg-transparent"}) => {
+export const Footer = ({bgTheme = "dark"}) => {
     const className = {
-      container: `${bgColor} w-full space-y-10 p-5 md:p-10 lg:p-20`,
-      upContainer: "w-full grid grid-cols-1 lg:grid-cols-4 gap-10 place-items-center lg:place-items-start",
-      title: "text-dark-brown font-bold text-xl",
+      container: `${
+        bgTheme === "dark" ? "bg-dark-purple text-white" : "bg-transparent"
+      } w-full space-y-10 p-5 md:p-10 lg:p-20 mt-10`,
+      upContainer:
+        "w-full grid grid-cols-1 lg:grid-cols-4 gap-10 place-items-center lg:place-items-start",
+      title: `${
+        bgTheme === "dark" ? "text-white" : "text-dark-brown"
+      } font-bold text-xl`,
       menuBox: "flex flex-col items-center lg:items-start gap-3",
       menuTitle: "text-lg text-light-accent py-5",
       menu: "hover:underline w-fit",
       socialList: "flex items-center gap-4",
       socialIcon: "block w-fit p-4 rounded-full bg-light-accent text-white",
-      downContainer: "py-4 border-t border-t-dark-creme flex flex-col lg:flex-row items-center gap-5 justify-between w-full",
-      copyright: "text-gray-600/80",
+      downContainer:
+        "py-4 border-t border-t-dark-creme flex flex-col lg:flex-row items-center gap-5 justify-between w-full",
+      copyright: `${bgTheme === "dark" ? "text-white/60" : "text-gray-600/80"}`,
       policies: "flex items-center gap-5 text-gray-400",
     };
 
@@ -47,7 +53,7 @@ export const Footer = ({bgColor = "bg-transparent"}) => {
           <ul className={className.socialList}>
             {Data.socialList.map((data, index) => (
               <li key={index}>
-                <Link to={data.link} className={className.socialIcon}>
+                <Link target={"_blank"} to={data.link} className={className.socialIcon}>
                   {data.icon}
                 </Link>
               </li>
