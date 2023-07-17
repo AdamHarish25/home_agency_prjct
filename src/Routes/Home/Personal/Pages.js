@@ -442,7 +442,7 @@ export const PersHome_7 = () => {
 export const PersHome_8 = () => {
 
   const className = {
-    container: "w-full space-y-20 p-10 lg:p-20 text-dark-brown",
+    container: "w-full space-y-14 p-10 lg:p-20 text-dark-brown",
     headerBox:
       "w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 ",
     header: "text-light-accent font-light",
@@ -458,6 +458,12 @@ export const PersHome_8 = () => {
     card2: "space-y-4 w-full",
     cardTitleS: "text-xl font-bold block w-fit hover:underline",
 
+    newsletterBar: "w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-7 py-10 border-t border-dark-creme",
+    newsTitleBox: "space-y-3",
+    newsTitle: "text-xl font-bold",
+    newsFormBox: "w-full lg:w-auto flex flex-col md:flex-row items-start md:items-center gap-5",
+    newsForm: "w-full lg:w-auto px-5 py-4 rounded-md outline-none bg-white border border-dark-creme ",
+    newsSubmitForm: "w-full lg:w-auto px-10 py-3 rounded-md shadow-sm hover:shadow-md bg-white font-bold",
   };
 
   const Data = Database.page_8;
@@ -511,7 +517,50 @@ export const PersHome_8 = () => {
           ))}
         </div>
       </div>
+
+      <div className={className.newsletterBar}>
+          <div className={className.newsTitleBox}>
+            <h1 className={className.newsTitle}>
+              {Data.newsBar.title}
+            </h1>
+
+            <p>
+              {Data.newsBar.subtitle}
+            </p>
+          </div>
+
+          <form className={className.newsFormBox}>
+              <input type={`email`} placeholder={Data.newsBar.form} className={className.newsForm}/>
+
+              <button type={'submit'} className={className.newsSubmitForm}>
+                {Data.newsBar.submitButton.title}
+              </button>
+          </form>
+      </div>
     </div>
   );
 
+}
+
+
+export const PersHome_9 = () => {
+
+  const className = {
+    container: "w-full p-10 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-6",
+    formBox: "",
+    descriptionBox: "",
+  }
+
+
+  return (
+    <div className={className.container}>
+      <form>
+
+      </form>
+
+      <div>
+
+      </div>
+    </div>
+  )
 }

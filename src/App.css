@@ -990,6 +990,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
 .grid-rows-2{
   grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
 }
@@ -1348,10 +1352,6 @@ video {
 
 .p-8{
   padding: 2rem !important;
-}
-
-.p-28{
-  padding: 7rem !important;
 }
 
 .px-0{
@@ -1963,10 +1963,6 @@ video {
     padding: 5rem !important;
   }
 
-  .lg\:p-28{
-    padding: 7rem !important;
-  }
-
   .lg\:px-0{
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -1980,6 +1976,11 @@ video {
   .lg\:px-14{
     padding-left: 3.5rem !important;
     padding-right: 3.5rem !important;
+  }
+
+  .lg\:px-20{
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 
   .lg\:px-32{
@@ -1997,24 +1998,9 @@ video {
     padding-right: 2rem !important;
   }
 
-  .lg\:py-10{
-    padding-top: 2.5rem !important;
-    padding-bottom: 2.5rem !important;
-  }
-
   .lg\:py-14{
     padding-top: 3.5rem !important;
     padding-bottom: 3.5rem !important;
-  }
-
-  .lg\:px-20{
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
-  }
-
-  .lg\:py-1{
-    padding-top: 0.25rem !important;
-    padding-bottom: 0.25rem !important;
   }
 
   .lg\:py-16{

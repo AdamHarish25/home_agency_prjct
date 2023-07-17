@@ -1084,6 +1084,24 @@ const DataStorage = {
           date: "21 Oct, 2021",
         },
       ],
+
+      newsBar: {
+        title: "Newsletter",
+        subtitle: "A digital agency is a business you hire to outsource",
+
+        form: "Your email",
+        submitButton: {
+          title: "Subscribe",
+          link: "/",
+        },
+      },
+    },
+
+    page_9: {
+      form: {
+        title: "",
+        
+      }
     },
   },
 };

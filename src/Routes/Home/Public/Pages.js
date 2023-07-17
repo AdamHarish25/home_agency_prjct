@@ -1043,7 +1043,7 @@ export const PubHPage15 = () => {
         {viewport.innerWidth >= 870 ? (
           <div className={className.desktopFormContainer}>
             {/* <Map
-              googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCAaaq804q-woCIcHTSYFDDO70hG1lbMNE`}
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY`}
               loadingElement={<div style={{ height: "600px" }} />}
               containerElement={<div style={{ height: "600px" }} />}
               mapElement={<div style={{ height: "600px" }} />}
@@ -1117,7 +1117,7 @@ export const PubHPage15 = () => {
             </div>
 
             {/* <Map
-              googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCAaaq804q-woCIcHTSYFDDO70hG1lbMNE`}
+              googleMapURL={`https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY`}
               loadingElement={<div style={{ height: "600px" }} />}
               containerElement={<div style={{ height: "600px" }} />}
               mapElement={<div style={{ height: "600px" }} />}
@@ -1136,15 +1136,10 @@ export const PubHPage15 = () => {
 
         <div className={className.infosContainer}>
           {Data.list.map((data, index) => (
-            <div
-              key={index}
-              className={className.infoCard}
-            >
+            <div key={index} className={className.infoCard}>
               <div className={className.infoTitleCard}>
                 <img src={data.icon} alt="" />
-                <p className={className.infoTitle}>
-                  {data.title}
-                </p>
+                <p className={className.infoTitle}>{data.title}</p>
               </div>
 
               <p>{data.content}</p>
