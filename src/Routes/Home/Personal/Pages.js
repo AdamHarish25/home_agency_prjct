@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { Link } from "react-router-dom";
 import { DataStorage } from "../../../Data/WholeData";
 import { useViewport } from "../../../Component/Viewport";
@@ -440,7 +442,6 @@ export const PersHome_7 = () => {
 };
 
 export const PersHome_8 = () => {
-
   const className = {
     container: "w-full space-y-14 p-10 lg:p-20 text-dark-brown",
     headerBox:
@@ -451,32 +452,35 @@ export const PersHome_8 = () => {
     Link: "block w-fit py-3 rounded-md px-6 bg-white hover:shadow-md font-bold",
 
     cardBox: "w-full grid grid-cols-1 lg:grid-cols-4 gap-8 place-items-center",
-    card1: "lg:col-start-1 lg:col-end-4 w-full space-y-4 lg:space-y-6",
+    card1:
+      "lg:col-start-1 lg:col-end-4 w-full flex flex-col gap-4 lg:gap-6 items-center lg:items-start text-center lg:text-start",
     cardTitleL: "text-xl lg:text-3xl font-bold block w-fit hover:underline",
     cardDate: "text-gray-600/50",
     colCards: "h-full w-full grid grid-rows-2 gap-5",
-    card2: "space-y-4 w-full",
+    card2:
+      "text-center flex flex-col gap-4 lg:gap-6 items-center lg:items-start lg:text-start w-full",
     cardTitleS: "text-xl font-bold block w-fit hover:underline",
 
-    newsletterBar: "w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-7 py-10 border-t border-dark-creme",
+    newsletterBar:
+      "w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-7 py-10 border-t border-dark-creme",
     newsTitleBox: "space-y-3",
     newsTitle: "text-xl font-bold",
-    newsFormBox: "w-full lg:w-auto flex flex-col md:flex-row items-start md:items-center gap-5",
-    newsForm: "w-full lg:w-auto px-5 py-4 rounded-md outline-none bg-white border border-dark-creme ",
-    newsSubmitForm: "w-full lg:w-auto px-10 py-3 rounded-md shadow-sm hover:shadow-md bg-white font-bold",
+    newsFormBox:
+      "w-full lg:w-auto flex flex-col md:flex-row items-start md:items-center gap-5",
+    newsForm:
+      "w-full lg:w-auto px-5 py-4 rounded-md outline-none bg-white border border-dark-creme ",
+    newsSubmitForm:
+      "w-full lg:w-auto px-10 py-3 rounded-md shadow-sm hover:shadow-md bg-white font-bold",
   };
 
   const Data = Database.page_8;
-
 
   return (
     <div className={className.container}>
       <div className={className.headerBox}>
         <div className={className.titleBox}>
           <h4 className={className.header}>{Data.header}</h4>
-          <h1 className={className.title}>
-            {Data.title}
-          </h1>
+          <h1 className={className.title}>{Data.title}</h1>
         </div>
 
         <Link className={className.Link} to={Data.button.link}>
@@ -486,80 +490,168 @@ export const PersHome_8 = () => {
 
       <div className={className.cardBox}>
         <div className={className.card1}>
-          <img draggable={false} src={Data.card1.img} alt=""/>
-          
-          <h5>
-            {Data.card1.header}
-          </h5>
+          <img draggable={false} src={Data.card1.img} alt="" />
+
+          <h5>{Data.card1.header}</h5>
           <Link to={Data.card1.link} className={className.cardTitleL}>
             {Data.card1.title}
           </Link>
-          <p className={className.cardDate}>
-            {Data.card1.date}
-          </p>
+          <p className={className.cardDate}>{Data.card1.date}</p>
         </div>
 
         <div className={className.colCards}>
           {Data.cards.map((data, index) => (
             <div key={index} className={className.card2}>
-              <img draggable={false} src={data.img} alt=""/>
+              <img draggable={false} src={data.img} alt="" />
 
-              <h5>
-                {data.header}
-              </h5>
+              <h5>{data.header}</h5>
               <Link to={data.link} className={className.cardTitleS}>
                 {data.title}
               </Link>
-              <p className={className.cardDate}>
-                {data.date}
-              </p>
+              <p className={className.cardDate}>{data.date}</p>
             </div>
           ))}
         </div>
       </div>
 
       <div className={className.newsletterBar}>
-          <div className={className.newsTitleBox}>
-            <h1 className={className.newsTitle}>
-              {Data.newsBar.title}
-            </h1>
+        <div className={className.newsTitleBox}>
+          <h1 className={className.newsTitle}>{Data.newsBar.title}</h1>
 
-            <p>
-              {Data.newsBar.subtitle}
-            </p>
-          </div>
+          <p>{Data.newsBar.subtitle}</p>
+        </div>
 
-          <form className={className.newsFormBox}>
-              <input type={`email`} placeholder={Data.newsBar.form} className={className.newsForm}/>
+        <form className={className.newsFormBox}>
+          <input
+            type={`email`}
+            placeholder={Data.newsBar.form}
+            className={className.newsForm}
+          />
 
-              <button type={'submit'} className={className.newsSubmitForm}>
-                {Data.newsBar.submitButton.title}
-              </button>
-          </form>
+          <button type={"submit"} className={className.newsSubmitForm}>
+            {Data.newsBar.submitButton.title}
+          </button>
+        </form>
       </div>
     </div>
   );
-
-}
-
+};
 
 export const PersHome_9 = () => {
-
   const className = {
-    container: "w-full p-10 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-6",
-    formBox: "",
-    descriptionBox: "",
-  }
+    container: "w-full p-10 lg:p-20 grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10",
+    cardForm: "order-2 lg:order-1 p-10 space-y-5 bg-white w-[400px] rounded-md",
+    form: "space-y-5",
+    cardTitle: "text-xl font-semibold",
+    button: "px-5 py-3 font-bold rounded-md gap-4 bg-light-accent text-white",
+    input:
+      "p-3 placeholder-gray-500 border border-dark-creme rounded-lg w-full outline-none",
+    textBox:
+      "p-3 placeholder-gray-500 resize-none border border-dark-creme rounded-lg w-full outline-none h-[130px]",
 
+    descriptionBox: "space-y-4 text-white order-1 lg:order-2",
+    header: "text-light-accent text-lg",
+    title: "text-2xl lg:text-5xl font-bold",
+    subtitle: "text-white/60",
+    listBox: "space-y-3 list-none",
+    list: "flex items-center gap-4",
+    listIcon: "p-3 rounded-full bg-light-accent text-white"
+  };
+
+  const Data = Database.page_9;
 
   return (
     <div className={className.container}>
-      <form>
+      <div className={className.cardForm}>
+        <h1 className={className.cardTitle}>{Data.form.title}</h1>
 
-      </form>
+        <form className={className.form}>
+          <input
+            placeholder={Data.form.placeholder.email}
+            type={"email"}
+            className={className.input}
+          />
 
-      <div>
+          <input
+            placeholder={Data.form.placeholder.subject}
+            type={"text"}
+            className={className.input}
+          />
 
+          <textarea
+            className={className.textBox}
+            placeholder={Data.form.placeholder.message}
+          ></textarea>
+
+          <button className={className.button} type={"submit"}>
+            {Data.form.button}
+          </button>
+        </form>
+      </div>
+
+      <div className={className.descriptionBox}>
+        <h4 className={className.header}>{Data.header.toUpperCase()}</h4>
+        <h1 className={className.title}>{Data.title}</h1>
+
+        <p className={className.subtitle}>{Data.subtitle}</p>
+
+        <ul className={className.listBox}>
+          {Data.list.map((data, index) => (
+            <li className={className.list}>
+              <div className={className.listIcon}>{data.icon}</div>
+              <p>{data.title}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+
+export const PersHome_10 = () => {
+  const className = {
+    container: "w-full bg-light-creme",
+    innerBox: "w-full grid grid-cols-1 gap-10 lg:grid-cols-2 place-items-center p-10 lg:p-20",
+    descriptionBox: "space-y-5",
+    header: "text-light-accent text-lg",
+    title: "text-2xl lg:text-5xl text-dark-brown font-bold",
+    subtitle: "text-black/60",
+    link: "block w-fit px-6 py-3 bg-light-accent text-white rounded-lg",
+
+
+    listBox: "w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6",
+    listImg: "w-full"
+  };
+
+  const Data = Database.page_10;
+
+  return (
+    <div className={className.container}>
+      <div className={className.innerBox}>
+        <div className={className.descriptionBox}>
+          <h4 className={className.header}>
+            {Data.header}
+          </h4>
+          <h1 className={className.title}>
+            {Data.title}
+          </h1>
+          <p className={className.subtitle}>
+            {Data.subtitle}
+          </p>
+
+          <Link to={Data.button.link} className={className.link}>
+            {Data.button.title}
+          </Link>
+        </div>
+
+        <img src={Data.img} alt=""/>
+      </div>
+
+      <div className={className.listBox}>
+        {Data.list.map((data, index) => (
+          <img src={data.img} alt="" key={index} className={className.listImg}/>
+        ))}
       </div>
     </div>
   )

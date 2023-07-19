@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { DataStorage } from "../Data/WholeData";
 
 
-export const Footer = ({bgTheme = "dark"}) => {
+export const Footer = ({bgTheme = "dark", gap = "yes"}) => {
     const className = {
       container: `${
         bgTheme === "dark" ? "bg-dark-purple text-white" : "bg-transparent"
-      } w-full space-y-10 p-5 md:p-10 lg:p-20 mt-10`,
+      } w-full space-y-10 p-10 lg:p-20 ${gap === "yes" ? "mt-10" : "mt-0"}`,
       upContainer:
         "w-full grid grid-cols-1 lg:grid-cols-4 gap-10 place-items-center lg:place-items-start",
       title: `${

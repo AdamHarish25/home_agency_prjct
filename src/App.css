@@ -795,6 +795,10 @@ video {
   margin-top: 1.25rem !important;
 }
 
+.mt-0{
+  margin-top: 0px !important;
+}
+
 .block{
   display: block !important;
 }
@@ -833,6 +837,10 @@ video {
 
 .h-5{
   height: 1.25rem !important;
+}
+
+.h-60{
+  height: 15rem !important;
 }
 
 .h-8{
@@ -875,6 +883,22 @@ video {
 
 .h-full{
   height: 100% !important;
+}
+
+.h-40{
+  height: 10rem !important;
+}
+
+.h-72{
+  height: 18rem !important;
+}
+
+.h-6{
+  height: 1.5rem !important;
+}
+
+.h-64{
+  height: 16rem !important;
 }
 
 .w-10{
@@ -978,6 +1002,10 @@ video {
   cursor: pointer !important;
 }
 
+.resize-none{
+  resize: none !important;
+}
+
 .resize{
   resize: both !important;
 }
@@ -988,6 +1016,10 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
 }
 
 .grid-cols-2{
@@ -1162,6 +1194,14 @@ video {
 
 .overflow-visible{
   overflow: visible !important;
+}
+
+.overflow-x-auto{
+  overflow-x: auto !important;
+}
+
+.overflow-x-scroll{
+  overflow-x: scroll !important;
 }
 
 .rounded-\[15px\]{
@@ -1638,6 +1678,10 @@ video {
   color: rgb(255 255 255 / 0.64) !important;
 }
 
+.text-black\/60{
+  color: rgb(0 0 0 / 0.6) !important;
+}
+
 .text-opacity-0{
   --tw-text-opacity: 0 !important;
 }
@@ -1800,6 +1844,14 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
   .md\:flex-row{
     flex-direction: row !important;
   }
@@ -1887,6 +1939,10 @@ video {
     grid-column-end: 4 !important;
   }
 
+  .lg\:h-60{
+    height: 15rem !important;
+  }
+
   .lg\:w-60{
     width: 15rem !important;
   }
@@ -1925,6 +1981,10 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }
 
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+
   .lg\:grid-rows-2{
     grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
   }
@@ -1949,10 +2009,12 @@ video {
     justify-content: space-between !important;
   }
 
-  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0 !important;
-    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
-    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse)) !important;
+  .lg\:gap-6{
+    gap: 1.5rem !important;
+  }
+
+  .lg\:overflow-x-hidden{
+    overflow-x: hidden !important;
   }
 
   .lg\:p-10{
@@ -2014,6 +2076,10 @@ video {
 
   .lg\:pr-60{
     padding-right: 15rem !important;
+  }
+
+  .lg\:text-start{
+    text-align: start !important;
   }
 
   .lg\:text-3xl{

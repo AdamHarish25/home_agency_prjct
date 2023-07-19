@@ -3,6 +3,7 @@ import { Footer } from "../../Component/Footer";
 import Navbar from "../../Component/Navbar";
 import {
   PersHome_1,
+  PersHome_10,
   PersHome_2,
   PersHome_3,
   PersHome_4,
@@ -10,6 +11,7 @@ import {
   PersHome_6,
   PersHome_7,
   PersHome_8,
+  PersHome_9,
 } from "./Personal/Pages";
 
 const PersonalHome = () => {
@@ -36,12 +38,17 @@ const PersonalHome = () => {
       <PersHome_6 />
 
       <div className={className.darkBox}>
-        <PersHome_7/>
+        <PersHome_7 />
       </div>
 
       <PersHome_8 />
+      
+      <div className={className.darkBox}>
+        <PersHome_9 />
+      </div>
 
-      <Footer bgTheme="dark" />
+      <PersHome_10 />
+      <Footer bgTheme="dark" gap="no"/>
     </div>
   );
 };

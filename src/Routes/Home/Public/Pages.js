@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useViewport } from "../../../Component/Viewport";
 import { DataStorage } from "../../../Data/WholeData";
 import { Link, useNavigate } from "react-router-dom";
@@ -1001,8 +1003,8 @@ export const PubHPage15 = () => {
       form1: "flex flex-col lg:flex-row items-center gap-4 w-full md:w-[500px]",
       input:
         "p-3 placeholder-gray-500 border border-dark-creme rounded-lg w-full outline-none",
-      resizableInput:
-        "p-3 placeholder-gray-500 border border-dark-creme rounded-lg w-full outline-none h-[130px]",
+      textBox:
+        "p-3 placeholder-gray-500 border resize-none border-dark-creme rounded-lg w-full outline-none h-[130px]",
       button2:
         "px-5 py-3 font-bold rounded-md gap-4 bg-light-accent text-white",
       map: "w-full h-[600px] border-none",
@@ -1032,7 +1034,7 @@ export const PubHPage15 = () => {
             <input
               type="email"
               className={className.input}
-              placeholder={Data.placeholder1}
+              placeholder={Data.form1.placeholder}
             />
             <button type="submit" className={className.button1}>
               {Data.button1}
@@ -1062,22 +1064,20 @@ export const PubHPage15 = () => {
               <h1 className={className.title2}>{Data.title2}</h1>
 
               <form className={className.form2}>
-                {Array.from({ length: 2 }).map((_, index) => (
-                  <input
-                    key={index}
-                    placeholder={
-                      index !== 0
-                        ? Data.placeholder2.subject
-                        : Data.placeholder2.email
-                    }
-                    type={index !== 0 ? "text" : "email"}
-                    className={className.input}
-                  />
-                ))}
+                <input
+                  placeholder={Data.form2.placeholder.email}
+                  type={Data.form2.type.email}
+                  className={className.input}
+                />
 
+                <input
+                  placeholder={Data.form2.placeholder.subject}
+                  type={Data.form2.type.subject}
+                  className={className.input}
+                />
                 <textarea
-                  className={className.resizableInput}
-                  placeholder={Data.placeholder2.message}
+                  className={className.textBox}
+                  placeholder={Data.form2.placeholder.message}
                 ></textarea>
 
                 <button className={className.button2} type={"submit"}>
@@ -1092,22 +1092,21 @@ export const PubHPage15 = () => {
               <h1 className={className.title2}>{Data.title2}</h1>
 
               <form className={className.form2}>
-                {Array.from({ length: 2 }).map((_, index) => (
-                  <input
-                    key={index}
-                    placeholder={
-                      index !== 0
-                        ? Data.placeholder2.subject
-                        : Data.placeholder2.email
-                    }
-                    type={index !== 0 ? "text" : "email"}
-                    className={className.input}
-                  />
-                ))}
+                <input
+                  placeholder={Data.form2.placeholder.email}
+                  type={Data.form2.type.email}
+                  className={className.input}
+                />
+
+                <input
+                  placeholder={Data.form2.placeholder.subject}
+                  type={Data.form2.type.subject}
+                  className={className.input}
+                />
 
                 <textarea
-                  className={className.resizableInput}
-                  placeholder={Data.placeholder2.message}
+                  className={className.textBox}
+                  placeholder={Data.form2.placeholder.message}
                 ></textarea>
 
                 <button className={className.button2} type={"submit"}>

@@ -57,7 +57,7 @@ import PubList15_3 from "../Attachments/Image/PublicHome/Pub15List/list3.svg";
 
 import PubImg16 from "../Attachments/Image/PublicHome/Pub16Img.png";
 
-import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaFacebookF, FaCompass, FaPhone, FaEnvelope } from "react-icons/fa";
 
 import PersImg1 from "../Attachments/Image/PersonalHome/PersImg1.png";
 
@@ -85,6 +85,15 @@ import PersList7_5 from "../Attachments/Image/PersonalHome/PersList_7/list5.svg"
 import PersList8_1 from "../Attachments/Image/PersonalHome/PersList_8/list1.png";
 import PersList8_2 from "../Attachments/Image/PersonalHome/PersList_8/list2.png";
 import PersList8_3 from "../Attachments/Image/PersonalHome/PersList_8/list3.png";
+
+import PersImg10 from '../Attachments/Image/PersonalHome/PersImg10.png';
+import PersList10_1 from '../Attachments/Image/PersonalHome/PersList_10/list1.png';
+import PersList10_2 from "../Attachments/Image/PersonalHome/PersList_10/list2.png";
+import PersList10_3 from "../Attachments/Image/PersonalHome/PersList_10/list3.png";
+import PersList10_4 from "../Attachments/Image/PersonalHome/PersList_10/list4.png";
+import PersList10_5 from "../Attachments/Image/PersonalHome/PersList_10/list5.png";
+import PersList10_6 from "../Attachments/Image/PersonalHome/PersList_10/list6.png";
+
 
 const DataStorage = {
   Navbar: {
@@ -705,19 +714,26 @@ const DataStorage = {
 
     page_15: {
       title1: "Newsletter",
-      placeholder1: "Your email",
+      form1: {
+        placeholder: "Your email",
+        type: "email",
+      },
       button1: "Subscribe",
 
       title2: "Get In Touch",
-      placeholder2: {
-        email: "Your email",
-        subject: "Subject",
-        message: "Message",
+      form2: {
+        placeholder: {
+          email: "Your email",
+          subject: "Subject",
+          message: "Message",
+        },
+        type: {
+          email: "email",
+          subject: "text",
+        },
       },
 
       button2: "Submit Now",
-
-      apiKey: "AIzaSyCAaaq804q-woCIcHTSYFDDO70hG1lbMNE",
 
       list: [
         {
@@ -1099,9 +1115,73 @@ const DataStorage = {
 
     page_9: {
       form: {
-        title: "",
-        
-      }
+        title: "Get In Touch",
+        placeholder: {
+          email: "Your email",
+          subject: "Subject",
+          message: "Message",
+        },
+        type: {
+          email: "email",
+          subject: "text",
+        },
+        button: "Submit Now",
+      },
+
+      header: "Contact",
+      title: "Contact Me",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+      list: [
+        {
+          title: "2247 Lunetta Street, TX 76301",
+          icon: <FaCompass />,
+        },
+        {
+          title: "+1 (234) 567-89-00",
+          icon: <FaPhone />,
+        },
+        {
+          title: "info@agency.com",
+          icon: <FaEnvelope />,
+        },
+      ],
+    },
+
+    page_10: {
+      header: "Gabriel Pires",
+      title: "Help To Build Your Dream Project",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+      button: {
+        title: "Contact Me",
+        link: "/Contact",
+      },
+
+      img: PersImg10,
+
+      list: [
+        {
+          img: PersList10_1,
+        },
+        {
+          img: PersList10_2,
+        },
+        {
+          img: PersList10_3,
+        },
+        {
+          img: PersList10_4,
+        },
+        {
+          img: PersList10_5,
+        },
+        {
+          img: PersList10_6,
+        },
+      ],
     },
   },
 };
