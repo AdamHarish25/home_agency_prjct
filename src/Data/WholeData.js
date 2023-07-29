@@ -57,7 +57,14 @@ import PubList15_3 from "../Attachments/Image/PublicHome/Pub15List/list3.svg";
 
 import PubImg16 from "../Attachments/Image/PublicHome/Pub16Img.png";
 
-import { FaInstagram, FaTwitter, FaFacebookF, FaCompass, FaPhone, FaEnvelope } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebookF,
+  FaCompass,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
 
 import PersImg1 from "../Attachments/Image/PersonalHome/PersImg1.png";
 
@@ -86,13 +93,31 @@ import PersList8_1 from "../Attachments/Image/PersonalHome/PersList_8/list1.png"
 import PersList8_2 from "../Attachments/Image/PersonalHome/PersList_8/list2.png";
 import PersList8_3 from "../Attachments/Image/PersonalHome/PersList_8/list3.png";
 
-import PersImg10 from '../Attachments/Image/PersonalHome/PersImg10.png';
-import PersList10_1 from '../Attachments/Image/PersonalHome/PersList_10/list1.png';
+import PersImg10 from "../Attachments/Image/PersonalHome/PersImg10.png";
+import PersList10_1 from "../Attachments/Image/PersonalHome/PersList_10/list1.png";
 import PersList10_2 from "../Attachments/Image/PersonalHome/PersList_10/list2.png";
 import PersList10_3 from "../Attachments/Image/PersonalHome/PersList_10/list3.png";
 import PersList10_4 from "../Attachments/Image/PersonalHome/PersList_10/list4.png";
 import PersList10_5 from "../Attachments/Image/PersonalHome/PersList_10/list5.png";
 import PersList10_6 from "../Attachments/Image/PersonalHome/PersList_10/list6.png";
+
+import WebFImg1 from "../Attachments/Image/Webflow/WebflowImg1.png";
+
+import WebFImg2_1 from "../Attachments/Image/Webflow/WebflowImg2_1.svg";
+import WebFImg2_2 from "../Attachments/Image/Webflow/WebflowImg2_2.png";
+
+import WebFList3_1 from '../Attachments/Image/Webflow/WebflowList3/list1.png';
+import WebFList3_2 from '../Attachments/Image/Webflow/WebflowList3/list2.png';
+import WebFList3_3 from "../Attachments/Image/Webflow/WebflowList3/list3.png";
+
+import WebFVideo4 from '../Attachments/Video/video.mp4';
+
+import WebFList5_1 from '../Attachments/Image/Webflow/WebflowCard5/card1.png';
+import WebFList5_2 from "../Attachments/Image/Webflow/WebflowCard5/card2.png";
+import WebFList5_3 from "../Attachments/Image/Webflow/WebflowCard5/card3.png";
+import WebFList5_4 from "../Attachments/Image/Webflow/WebflowCard5/card4.png";
+import WebFList5_5 from "../Attachments/Image/Webflow/WebflowCard5/card5.png";
+import WebFList5_6 from "../Attachments/Image/Webflow/WebflowCard5/card6.png";
 
 
 const DataStorage = {
@@ -129,12 +154,19 @@ const DataStorage = {
       title: "We’re Help To Build Your Dream Project",
       subtitle:
         "Agency provides a full service range including technical skills, design, business understanding.",
-      button1: "How We Work",
-      button2: "Contact Us",
+      button1: {
+        title: "How We Work",
+        link: "/Work",
+      },
+      button2: {
+        title: "Contact Us",
+        link: "/Contact",
+      },
       companyPic: companyPubH1,
       companyName: "Meta Inc.",
       companyFeedback: `"Put themselves in the merchant's shoes"`,
     },
+
     page_2: [
       {
         img: logo1,
@@ -170,18 +202,18 @@ const DataStorage = {
         link: "/About",
       },
 
-      list1: [
+      card: [
         {
           title: "Years of experience",
-          count: "42%",
+          value: "42%",
         },
         {
           title: "Agency members",
-          count: "72",
+          value: "72",
         },
         {
           title: "Projects complete",
-          count: "5.000",
+          value: "5.000",
         },
       ],
 
@@ -191,10 +223,10 @@ const DataStorage = {
         "Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.",
       button2: {
         title: "Read More",
-        link: "/",
+        link: "/Work",
       },
 
-      list2: [
+      list: [
         {
           title: "Full service range including",
         },
@@ -238,7 +270,7 @@ const DataStorage = {
       subtitle3: "Long run, and work as an extension of the merchant's team.",
       button: {
         title: "Read More",
-        link: "/",
+        link: "/Features",
       },
       list2: [
         {
@@ -270,34 +302,43 @@ const DataStorage = {
       },
       button: {
         title: "Explore",
-        link: "/",
+        link: "/Services",
       },
 
       title2: "How Our Agency Can Help",
-      list: [
+      card: [
         {
           img: pubList5_1,
           title: "Design",
           subtitle:
             "Agency provides a full service range including technical skills, design.",
-          buttonTitle: "Learn More",
-          buttonLink: "/",
+
+          button: {
+            title: "Learn More",
+            link: "/Services",
+          },
         },
         {
           img: pubList5_2,
           title: "Development",
           subtitle:
             "Full service range including technical skills, design, business.",
-          buttonTitle: "Discover More",
-          buttonLink: "/",
+
+          button: {
+            title: "Discover More",
+            link: "/Services",
+          },
         },
         {
           img: pubList5_3,
           title: "Marketing",
           subtitle:
             "Technical skills, design, business understanding, ability.",
-          buttonTitle: "Explore Now",
-          buttonLink: "/",
+
+          button: {
+            title: "Explore Now",
+            link: "/Services",
+          },
         },
       ],
     },
@@ -360,14 +401,17 @@ const DataStorage = {
       ],
 
       button: {
-        link: "/",
+        link: "/Portfolio",
         title: "Explore more",
       },
 
       banner: {
         header: "Get started",
         title: "We Help Companies Move Faster",
-        button: "Contact Us",
+        button: {
+          title: "Contact Us",
+          link: "/Contact",
+        },
         img1: pubImg6,
         img2: pubImg6_2,
         img3: pubImg6_3,
@@ -389,7 +433,7 @@ const DataStorage = {
             "Digital agency is a business you hire to outsource your digital.",
           button: {
             title: "Explore Now",
-            link: "/",
+            link: "/Events/event_1",
           },
         },
         {
@@ -401,7 +445,7 @@ const DataStorage = {
           subtitle: "Marketing efforts, instead of handling in-house.",
           button: {
             title: "Explore Now",
-            link: "/",
+            link: "/Events/event_2",
           },
         },
         {
@@ -414,14 +458,14 @@ const DataStorage = {
             "Provide your business with a variety of digital solutions to promote.",
           button: {
             title: "Explore Now",
-            link: "/",
+            link: "/Events/event_3",
           },
         },
       ],
 
       button: {
         title: "Explore More",
-        link: "/",
+        link: "/Events",
       },
     },
 
@@ -546,9 +590,8 @@ const DataStorage = {
             },
           ],
           button: {
-            color: "",
             title: "Contact Us",
-            link: "",
+            link: "/Contact",
           },
         },
         {
@@ -574,9 +617,8 @@ const DataStorage = {
             },
           ],
           button: {
-            color: "",
             title: "Contact Us",
-            link: "",
+            link: "/Contact",
           },
         },
         {
@@ -602,9 +644,8 @@ const DataStorage = {
             },
           ],
           button: {
-            color: "",
             title: "Contact Us",
-            link: "",
+            link: "/Contact",
           },
         },
       ],
@@ -674,7 +715,7 @@ const DataStorage = {
       button: {
         sidetitle: "Want more awards?",
         title: "Explore Now",
-        link: "/",
+        link: "/Awards",
       },
     },
 
@@ -683,7 +724,7 @@ const DataStorage = {
       title: "Latest Blog Articles",
 
       button: {
-        link: "/",
+        link: "/Blog",
         title: "Discover All",
       },
 
@@ -693,21 +734,21 @@ const DataStorage = {
           header: "Stories",
           title: "Agency is a business you hire to outsource",
           date: "5 Nov, 2021",
-          link: "/post1",
+          link: "/Blog/post1",
         },
         {
           img: PubList14_2,
           header: "Design",
           title: "Outsource your digital marketing efforts",
           date: "29 Oct, 2021",
-          link: "/post2",
+          link: "/Blog/post2",
         },
         {
           img: PubList14_3,
           header: "Marketing",
           title: "Your business with a variety of digital",
           date: "21 Oct, 2021",
-          link: "/post3",
+          link: "/Blog/post3",
         },
       ],
     },
@@ -879,7 +920,7 @@ const DataStorage = {
       footer: "Want more service? ",
       footerButton: {
         title: "Explore Now",
-        link: "/Service",
+        link: "/Services",
       },
     },
 
@@ -1182,6 +1223,215 @@ const DataStorage = {
           img: PersList10_6,
         },
       ],
+    },
+  },
+
+  Webflow: {
+    page_1: {
+      header: "Webflow Expert",
+      title: "Making Digital Products",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      img: WebFImg1,
+
+      button1: {
+        title: "Explore Work",
+        link: "/Work",
+      },
+
+      button2: {
+        title: "Contact Me",
+        link: "/Contact",
+      },
+    },
+
+    page_2: {
+      header1: "Features",
+      title1: "Custom Web Design",
+      button1: {
+        title: "Read More",
+        link: "/Feature",
+      },
+
+      list: [
+        {
+          img: WebFImg2_1,
+          title: "Professional",
+          subtitle: "Full service range including technical skills, design.",
+          color: "bg-[#FFFFFF] border-[#F3D1BF] shadow-xl",
+        },
+        {
+          img: "",
+          title: "Accessibility",
+          subtitle: "Business understanding, ability to put themselves.",
+          color: "border-[#F3D1BF] bg-transparent shadow-none",
+        },
+      ],
+
+      img: WebFImg2_2,
+      header2: "About Webflow",
+      title2: "Website Without The Dev Time",
+      subheader: "Provides a full service range",
+      subtitle:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      button2: {
+        title: "About Webflow",
+        link: "/Webflow",
+      },
+    },
+
+    page_3: {
+      header: "Service",
+      title: "How Webflow Expert Can Help",
+
+      card: [
+        {
+          icon: WebFList3_1,
+          title: "Design",
+          subtitle:
+            "Agency provides a full service range including technical skills, design.",
+          button: {
+            title: "Learn More",
+            link: "/Services",
+          },
+        },
+        {
+          icon: WebFList3_2,
+          title: "Development",
+          subtitle:
+            "Full service range including technical skills, design, business.",
+          button: {
+            title: "Discover More",
+            link: "/Services",
+          },
+        },
+        {
+          icon: WebFList3_3,
+          title: "Marketing",
+          subtitle:
+            "Full service range including technical skills, design, business.",
+          button: {
+            title: "Explore Now",
+            link: "/Services",
+          },
+        },
+      ],
+    },
+
+    page_4: {
+      header1: "Video Reel",
+      title1: "Unlock The Greatest Value Possible",
+      subtitle1:
+        "Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.",
+      video: WebFVideo4,
+
+      card: [
+        {
+          value: "42%",
+          title: "Years of experience",
+        },
+        {
+          value: "73+",
+          title: "Cups of coffee",
+        },
+        {
+          value: "5.000",
+          title: "Projects complete",
+        },
+      ],
+
+      header2: "How I work",
+      title2: "Making Your Projects Look Awesome",
+      subtitle2:
+        "Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.",
+      button: {
+        title: "Read More",
+        link: "/Work",
+      },
+
+      list: [
+        {
+          title: "Full service range including",
+        },
+        {
+          title: "Technical skills, design, business",
+        },
+        {
+          title: "Themselves in the merchant's",
+        },
+      ],
+    },
+
+    page_5: {
+      header: "Portfolio",
+      title: "Latest Work",
+
+      gridList: [
+        {
+          img: WebFList5_1,
+          title: "Sofa",
+          tag: "Design",
+        },
+
+        {
+          img: WebFList5_2,
+          title: "Keyboard",
+          tag: "Branding",
+        },
+
+        {
+          img: WebFList5_3,
+          title: "Work Media",
+          tag: "Illustration",
+        },
+
+        {
+          img: WebFList5_4,
+          title: "DDDone",
+          tag: "Motion",
+        },
+
+        {
+          img: WebFList5_5,
+          title: "Abstract",
+          tag: "Design",
+        },
+
+        {
+          img: WebFList5_6,
+          title: "HandP",
+          tag: "Branding",
+        },
+      ],
+
+      filterList: [
+        {
+          title: "Show All",
+          filter: "All",
+        },
+        {
+          title: "Design",
+          filter: "Design",
+        },
+        {
+          title: "Branding",
+          filter: "Branding",
+        },
+        {
+          title: "Illustration",
+          filter: "Illustration",
+        },
+        {
+          title: "Motion",
+          filter: "Motion",
+        },
+      ],
+
+      button: {
+        link: "/Portfolio",
+        title: "Explore more",
+      },
     },
   },
 };

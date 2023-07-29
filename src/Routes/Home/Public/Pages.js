@@ -47,8 +47,8 @@ export const PubHPage1 = () => {
           <h1 className={className.title}>{Data.title}</h1>
           <p className={className.subtitle}>{Data.subtitle}</p>
           <div className={className.buttonBox}>
-            <button className={className.button1}>{Data.button1}</button>
-            <button className={className.button2}>{Data.button2}</button>
+            <Link className={className.button1}>{Data.button1.title}</Link>
+            <Link className={className.button2}>{Data.button2.title}</Link>
           </div>
         </div>
 
@@ -139,17 +139,17 @@ export const PubHPage3 = () => {
     paragraph: "text-dark-brown/60",
     button:
       "px-5 py-2 text-dark-brown rounded-lg bg-white block w-fit text-xs font-semibold shadow-sm hover:shadow-md transition-shadow duration-200",
-    list1Box: "w-full px-10 grid grid-cols-1 lg:grid-cols-3 list-none",
-    list1: `w-full h-full border border-dark-creme space-y-3 p-10 ${
+    cardBox: "w-full px-10 grid grid-cols-1 lg:grid-cols-3 list-none",
+    card: `w-full h-full border border-dark-creme space-y-3 p-10 ${
       viewport.innerWidth < 1024
         ? "last-of-type:rounded-b-lg first-of-type:rounded-t-lg"
         : "last-of-type:rounded-r-lg first-of-type:rounded-l-lg"
     }`,
-    list1Count: "font-bold text-3xl",
-    list2Box: "space-y-8 list-none lg:w-fit w-full px-10 lg:px-0",
-    list2: "flex items-center gap-8",
-    list2Count: "w-10 text-5xl font-bold text-center",
-    list2Title: "font-semibold",
+    cardValue: "font-bold text-3xl",
+    listBox: "space-y-8 list-none lg:w-fit w-full px-10 lg:px-0",
+    list: "flex items-center gap-8",
+    listCount: "w-10 text-5xl font-bold text-center",
+    listTitle: "font-semibold",
   };
 
   var Data = Database.page_3;
@@ -170,10 +170,10 @@ export const PubHPage3 = () => {
         </div>
       </div>
 
-      <ul className={className.list1Box}>
-        {Data.list1.map((data1, index) => (
-          <li key={index} className={className.list1}>
-            <h1 className={className.list1Count}>{data1.count}</h1>
+      <ul className={className.cardBox}>
+        {Data.card.map((data1, index) => (
+          <li key={index} className={className.card}>
+            <h1 className={className.cardValue}>{data1.count}</h1>
             <p>{data1.title}</p>
           </li>
         ))}
@@ -189,14 +189,14 @@ export const PubHPage3 = () => {
           </Link>
         </div>
 
-        <ul className={className.list2Box}>
-          {Data.list2.map((data2, index) => (
-            <li key={index} className={className.list2}>
-              <div className={className.list2Count}>
+        <ul className={className.listBox}>
+          {Data.list.map((data2, index) => (
+            <li key={index} className={className.list}>
+              <div className={className.listCount}>
                 <p>{index + 1}</p>
               </div>
 
-              <h1 className={className.list2Title}>{data2.title}</h1>
+              <h1 className={className.listTitle}>{data2.title}</h1>
             </li>
           ))}
         </ul>
@@ -304,19 +304,19 @@ export const PubHPage5 = () => {
     link: "block w-fit",
     button:
       "px-5 py-2 text-dark-brown rounded-lg bg-white block w-fit text-xs font-semibold shadow-sm hover:shadow-md transition-shadow duration-200",
-    outerListBox: "space-y-8 w-full lg:px-10",
-    listBox: "w-full h-auto grid grid-cols-1 lg:grid-cols-3 place-items-center",
-    list: `w-full h-full border border-dark-creme bg-transparent space-y-7 p-12 ${
+    outerCardBox: "space-y-8 w-full lg:px-10",
+    cardBox: "w-full h-auto grid grid-cols-1 lg:grid-cols-3 place-items-center",
+    card: `w-full h-full border border-dark-creme bg-transparent space-y-7 p-12 ${
       viewport.innerWidth < 1024
         ? "last-of-type:rounded-b-lg first-of-type:rounded-t-lg"
         : "last-of-type:rounded-r-lg first-of-type:rounded-l-lg"
     }`,
-    listTitle: "text-xl font-bold",
-    listImg: "w-16 h-16",
+    cardTitle: "text-xl font-bold",
+    cardImg: "w-16 h-16",
     customerSect: "flex gap-4",
     customerImg: "w-12 h-12",
     customerProf: "space-y-2",
-    customerQuote: "text-xs text-gray-500",
+    paragraph: "text-xs text-gray-500",
     customerName: "text-sm",
   };
 
@@ -339,7 +339,7 @@ export const PubHPage5 = () => {
               className={className.customerImg}
             />
             <div className={className.customerProf}>
-              <p className={className.customerQuote}>{Data.customer.quote}</p>
+              <p className={className.paragraph}>{Data.customer.quote}</p>
               <h3 className={className.customerName}>{Data.customer.name}</h3>
             </div>
           </div>
@@ -350,24 +350,24 @@ export const PubHPage5 = () => {
         </div>
       </div>
 
-      <div className={className.outerListBox}>
+      <div className={className.outerCardBox}>
         <h4 className={className.header}>{Data.header.toUpperCase()}</h4>
         <h1 className={className.title}>{Data.title2}</h1>
 
-        <div className={className.listBox}>
-          {Data.list.map((data, index) => (
-            <div key={index} className={className.list}>
+        <div className={className.cardBox}>
+          {Data.card.map((data, index) => (
+            <div key={index} className={className.card}>
               <img
                 src={data.img}
                 alt={data.title}
-                className={className.listImg}
+                className={className.cardImg}
               />
 
-              <h1 className={className.listTitle}>{data.title}</h1>
-              <p className={className.customerQuote}>{data.subtitle}</p>
+              <h1 className={className.cardTitle}>{data.title}</h1>
+              <p className={className.paragraph}>{data.subtitle}</p>
 
-              <Link to={data.buttonLink} className={className.link}>
-                {data.buttonTitle}
+              <Link to={data.button.link} className={className.link}>
+                {data.button.title}
               </Link>
             </div>
           ))}
@@ -396,6 +396,7 @@ export const PubHPage6 = () => {
         : "grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 "
     } w-full h-full grid place-items-start gap-5`,
 
+    dropdownBox: "w-full h-fit grid place-items-center",
     buttonBox: "w-full grid place-items-center",
     button:
       "px-5 py-3 rounded-md font-bold text-white border border-white/30 block w-fit",
@@ -436,7 +437,7 @@ export const PubHPage6 = () => {
         <h1 className={className.title}>{Data.title}</h1>
 
         {viewport.innerWidth < 1024 ? (
-          <div className="w-full h-fit grid place-items-center">
+          <div className={className.dropdownBox}>
             <Dropdown options={Data.filterList} onChange={OnSelected} />
           </div>
         ) : (
@@ -496,7 +497,7 @@ export const PubHPage6 = () => {
         </div>
 
         <div className={className.buttonBox}>
-          <Link className={className.button}>{Data.button.title}</Link>
+          <Link to={Data.button.link} className={className.button}>{Data.button.title}</Link>
         </div>
       </div>
 
@@ -507,7 +508,7 @@ export const PubHPage6 = () => {
             {Data.banner.header.toUpperCase()}
           </h4>
           <h1 className={className.bannerTitle}>{Data.banner.title}</h1>
-          <Link className={className.bannerLink}>{Data.banner.button}</Link>
+          <Link to={Data.banner.button.link} className={className.bannerLink}>{Data.banner.button.title}</Link>
         </div>
         <img
           src={Data.banner.img2}

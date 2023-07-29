@@ -2,9 +2,9 @@
 
 import { Route, Routes } from "react-router";
 import "./App.css";
-import Navbar from "./Component/Navbar";
 import PublicHome from "./Routes/Home/PublicHome";
 import PersonalHome from "./Routes/Home/PersonalHome";
+import { Webflow } from "./Routes/Webflow/Webflow";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<PublicHome />} />
         <Route path="/Personal" element={<PersonalHome />} />
+        <Route path="/Webflow" element={<Webflow/>}/>
       </Routes>
     </div>
   );

@@ -787,16 +787,16 @@ video {
   margin-bottom: 1.25rem !important;
 }
 
+.mt-0{
+  margin-top: 0px !important;
+}
+
 .mt-10{
   margin-top: 2.5rem !important;
 }
 
 .mt-5{
   margin-top: 1.25rem !important;
-}
-
-.mt-0{
-  margin-top: 0px !important;
 }
 
 .block{
@@ -839,10 +839,6 @@ video {
   height: 1.25rem !important;
 }
 
-.h-60{
-  height: 15rem !important;
-}
-
 .h-8{
   height: 2rem !important;
 }
@@ -883,22 +879,6 @@ video {
 
 .h-full{
   height: 100% !important;
-}
-
-.h-40{
-  height: 10rem !important;
-}
-
-.h-72{
-  height: 18rem !important;
-}
-
-.h-6{
-  height: 1.5rem !important;
-}
-
-.h-64{
-  height: 16rem !important;
 }
 
 .w-10{
@@ -1016,10 +996,6 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-}
-
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
 }
 
 .grid-cols-2{
@@ -1196,14 +1172,6 @@ video {
   overflow: visible !important;
 }
 
-.overflow-x-auto{
-  overflow-x: auto !important;
-}
-
-.overflow-x-scroll{
-  overflow-x: scroll !important;
-}
-
 .rounded-\[15px\]{
   border-radius: 15px !important;
 }
@@ -1230,6 +1198,10 @@ video {
 
 .border-2{
   border-width: 2px !important;
+}
+
+.border-b{
+  border-bottom-width: 1px !important;
 }
 
 .border-t{
@@ -1319,6 +1291,11 @@ video {
 .bg-light-creme{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(253 240 233 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-purple-500{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-transparent{
@@ -1613,6 +1590,10 @@ video {
   line-height: 1.25 !important;
 }
 
+.text-black\/60{
+  color: rgb(0 0 0 / 0.6) !important;
+}
+
 .text-dark-brown{
   --tw-text-opacity: 1 !important;
   color: rgb(57 20 0 / var(--tw-text-opacity)) !important;
@@ -1674,12 +1655,12 @@ video {
   color: rgb(255 255 255 / 0.6) !important;
 }
 
-.text-white\/\[0\.64\]{
-  color: rgb(255 255 255 / 0.64) !important;
+.text-white\/70{
+  color: rgb(255 255 255 / 0.7) !important;
 }
 
-.text-black\/60{
-  color: rgb(0 0 0 / 0.6) !important;
+.text-white\/\[0\.64\]{
+  color: rgb(255 255 255 / 0.64) !important;
 }
 
 .text-opacity-0{
@@ -1844,10 +1825,6 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
-  .md\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-  }
-
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }
@@ -1870,12 +1847,13 @@ video {
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse)) !important;
   }
 
-  .md\:p-10{
-    padding: 2.5rem !important;
-  }
-
   .md\:p-20{
     padding: 5rem !important;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
   }
 
   .md\:px-16{
@@ -1937,10 +1915,6 @@ video {
 
   .lg\:col-end-4{
     grid-column-end: 4 !important;
-  }
-
-  .lg\:h-60{
-    height: 15rem !important;
   }
 
   .lg\:w-60{
@@ -2013,16 +1987,16 @@ video {
     gap: 1.5rem !important;
   }
 
-  .lg\:overflow-x-hidden{
-    overflow-x: hidden !important;
-  }
-
   .lg\:p-10{
     padding: 2.5rem !important;
   }
 
   .lg\:p-20{
     padding: 5rem !important;
+  }
+
+  .lg\:p-32{
+    padding: 8rem !important;
   }
 
   .lg\:px-0{
@@ -2135,6 +2109,11 @@ video {
   .xl\:px-\[450px\]{
     padding-left: 450px !important;
     padding-right: 450px !important;
+  }
+
+  .xl\:px-2{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
 
   .xl\:pr-20{
