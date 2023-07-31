@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { DataStorage } from "../Data/WholeData";
 
 
-export const Footer = ({bgTheme = "dark", gap = "yes"}) => {
+export const Footer = ({bgTheme = "dark", gap = "yes", title = "Agency"}) => {
     const className = {
       container: `${
-        bgTheme === "dark" ? "bg-dark-purple text-white" : "bg-transparent"
+        bgTheme === "dark" ? "bg-dark-purple text-white" : "bg-light-creme"
       } w-full space-y-10 p-10 lg:p-20 ${gap === "yes" ? "mt-10" : "mt-0"}`,
       upContainer:
         "w-full grid grid-cols-1 lg:grid-cols-4 gap-10 place-items-center lg:place-items-start",
@@ -28,7 +28,7 @@ export const Footer = ({bgTheme = "dark", gap = "yes"}) => {
     return (
       <div className={className.container}>
         <div className={className.upContainer}>
-          <h1 className={className.title}>{Data.title}</h1>
+          <h1 className={className.title}>{title}</h1>
 
           <ul className={className.menuBox}>
             <li className={className.menuTitle}>{Data.menuTitle1}</li>

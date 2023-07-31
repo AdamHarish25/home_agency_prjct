@@ -119,6 +119,12 @@ import WebFList5_4 from "../Attachments/Image/Webflow/WebflowCard5/card4.png";
 import WebFList5_5 from "../Attachments/Image/Webflow/WebflowCard5/card5.png";
 import WebFList5_6 from "../Attachments/Image/Webflow/WebflowCard5/card6.png";
 
+import WebFImg5_1 from '../Attachments/Image/Webflow/WebflowImg5_1.png'
+import WebFImg5_2 from "../Attachments/Image/Webflow/WebflowImg5_2.png";
+import WebFImg5_3 from "../Attachments/Image/Webflow/WebflowImg5_3.png";
+
+import WebFImg13 from '../Attachments/Image/Webflow/WebflowImg13.png';
+
 
 const DataStorage = {
   Navbar: {
@@ -808,8 +814,6 @@ const DataStorage = {
   },
 
   footer: {
-    title: "Agency",
-
     menuTitle1: "Menu",
     menu1: [
       {
@@ -1432,6 +1436,353 @@ const DataStorage = {
         link: "/Portfolio",
         title: "Explore more",
       },
+    },
+
+    page_6: {
+      banner: {
+        img1: WebFImg5_1,
+        header: "Get Started",
+        title: "I Help Companies Move Faster",
+        button: {
+          title: "Contact Me",
+          link: "/",
+        },
+
+        subtitle:
+          "Put themselves in the merchant's shoes. It is meant to partner on the long run.",
+
+        img2: WebFImg5_2,
+      },
+
+      header: "About",
+      title: "An Experience Webflow Expert",
+      subheader: "Provides a full service range",
+      subtitle:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      button: {
+        title: "About Me",
+        link: "/About",
+      },
+
+      img: WebFImg5_3,
+    },
+
+    page_7: {
+      header: "Testimonial",
+      title: "What our Clients Saying",
+
+      button: {
+        link: "/Testimonial",
+        title: "See All",
+      },
+
+      card: [
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. 
+          They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+          name: "Alan Marti",
+          company: "Meta.inc",
+          img: publist10_1,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `Provide your business with a variety of digital solutions to promote your product or service online.`,
+          name: "Richardo Kann",
+          company: "Photogram",
+          img: publist10_2,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.`,
+          name: "Graham Griffiths",
+          company: "Twitor",
+          img: publist10_3,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `Promote your product or service online and help you hit your marketing goals and grow your business.`,
+          name: "Maria Trofimova",
+          company: "Whochat",
+          img: publist10_4,
+        },
+      ],
+    },
+
+    page_8: {
+      header: "Pricing",
+      title: "Explore Pricing Plans",
+
+      card: [
+        {
+          highlight: "",
+          header: "Consultation",
+          price: "Free",
+          subheader:
+            "Your digital marketing efforts, instead of handling in-house.",
+          benefits: [
+            {
+              title: "Brand Design",
+              available: 1,
+            },
+
+            {
+              title: "Market Analysis",
+              available: 0,
+            },
+
+            {
+              title: "Production",
+              available: 0,
+            },
+          ],
+          button: {
+            title: "Contact Us",
+            link: "/Contact",
+          },
+        },
+        {
+          highlight: "Popular",
+          header: "Design",
+          price: "$1500",
+          subheader:
+            "Provide your business with a variety of digital solutions to promote.",
+          benefits: [
+            {
+              title: "Brand Design",
+              available: 1,
+            },
+
+            {
+              title: "Market Analysis",
+              available: 1,
+            },
+
+            {
+              title: "Production",
+              available: 0,
+            },
+          ],
+          button: {
+            title: "Contact Us",
+            link: "/Contact",
+          },
+        },
+        {
+          highlight: "",
+          header: "Design + Code",
+          price: "$2900",
+          subheader:
+            "Help you hit your marketing goals and grow your business.",
+          benefits: [
+            {
+              title: "Brand Design",
+              available: 1,
+            },
+
+            {
+              title: "Market Analysis",
+              available: 1,
+            },
+
+            {
+              title: "Production",
+              available: 1,
+            },
+          ],
+          button: {
+            title: "Contact Us",
+            link: "/Contact",
+          },
+        },
+      ],
+    },
+
+    page_9: {
+      header: "Faq",
+      title: "Frequently Asked Questions",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+      button: {
+        title: "Contact Us",
+        link: "/",
+      },
+
+      faqs: [
+        {
+          question: "A digital agency is a business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Hire to outsource your digital",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Marketing efforts",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Can provide your business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+      ],
+
+      logos: [
+        {
+          img: PersList7_1,
+        },
+        {
+          img: PersList7_2,
+        },
+        {
+          img: PersList7_3,
+        },
+        {
+          img: PersList7_4,
+        },
+        {
+          img: PersList7_5,
+        },
+      ],
+    },
+
+    page_10: {
+      title: "Our Awards",
+
+      list: [
+        {
+          img: pubList6_2,
+          title: "SOFA",
+          date: "25 Oct, 2021",
+          award: "Awwwards",
+          awardLogo: PubLogo13_1,
+        },
+        {
+          img: pubList6_3,
+          title: "KeyBoard",
+          date: "19 Oct, 2021",
+          award: "Css Design Awards",
+          awardLogo: PubLogo13_2,
+        },
+        {
+          img: pubList6_4,
+          title: "Work Media",
+          date: "7 Oct, 2021",
+          award: "The FWA",
+          awardLogo: PubLogo13_3,
+        },
+      ],
+
+      button: {
+        sidetitle: "Want more awards?",
+        title: "Explore Now",
+        link: "/Awards",
+      },
+    },
+
+    page_11: {
+      header: "Our Blog",
+      title: "Latest Blog Articles",
+
+      button: {
+        link: "/Blog",
+        title: "Discover All",
+      },
+
+      posts: [
+        {
+          img: PubList14_1,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/post1",
+        },
+        {
+          img: PubList14_2,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/post2",
+        },
+        {
+          img: PubList14_3,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/post3",
+        },
+      ],
+    },
+
+    page_12: {
+      newsBar: {
+        title: "Newsletter",
+        subtitle: "A digital agency is a business you hire to outsource",
+
+        form: "Your email",
+        submitButton: {
+          title: "Subscribe",
+          link: "/",
+        },
+      },
+
+      form: {
+        title: "Get In Touch",
+        placeholder: {
+          email: "Your email",
+          subject: "Subject",
+          message: "Message",
+        },
+        type: {
+          email: "email",
+          subject: "text",
+        },
+        button: "Submit Now",
+      },
+
+      header: "Contact",
+      title: "Contact Me",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+      list: [
+        {
+          title: "2247 Lunetta Street, TX 76301",
+          icon: <FaCompass />,
+        },
+        {
+          title: "+1 (234) 567-89-00",
+          icon: <FaPhone />,
+        },
+        {
+          title: "info@agency.com",
+          icon: <FaEnvelope />,
+        },
+      ],
+    },
+
+    page_13: {
+      title: "Help To Build Your Dream Project",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+      
+      button: {
+        title: "Contact Now",
+        link: "/Contact",
+      },
+
+      img: WebFImg13
     },
   },
 };

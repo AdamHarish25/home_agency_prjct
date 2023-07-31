@@ -1,0 +1,106 @@
+/* src/components/Carousel.css */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+  background-color: white;
+  height: 500px;
+}
+
+.prev-item,
+.next-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 10;
+}
+
+.prev-item {
+  left: 0;
+}
+
+.next-item {
+  right: 0;
+}
+
+.prev-item button,
+.next-item button {
+  background: none;
+  border: none;
+  font-size: 24px;
+}
+
+.item {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  background-color: #FDF0E9;
+  gap: 20px;
+  color: #391400;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  --tw-translate-x: -50% !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px gray solid ;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.carousel-indicator:hover {
+  background-color: #ef6c589c;
+  border: 0px;
+}
+
+.carousel-indicator.active {
+  background-color: #EF6D58;
+  border: 0px;
+}
+
+.inner-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+}
+
+.card-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 9999%;
+}
+
+.card-name{
+  font-size: 1.5rem/* 24px */ !important;
+  line-height: 2rem/* 32px */ !important;
+}
+
