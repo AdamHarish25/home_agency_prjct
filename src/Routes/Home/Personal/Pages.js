@@ -238,13 +238,13 @@ export const PersHome_5 = () => {
     img1: "order-1 lg:order-2",
 
     banner:
-      "w-full grid grid-cols-1 lg:grid-cols-3 place-items-center gap-10 px-10 md:px-16 pt-28 pb-16 lg:py-16 relative bg-gray-creme",
+      "w-full grid grid-cols-1 md:grid-cols-3 place-items-center gap-5 px-10 lg:px-16 pt-28 pb-16 md:py-16 relative bg-gray-creme",
     img2: "absolute left-10 -top-20 ",
     innerBanner: "flex h-full flex-col items-start justify-center gap-4 w-full",
     bannerTitle: "text-xl md:text-3xl",
     button:
       "block w-fit py-3 px-6 bg-light-accent text-white font-semibold rounded-md",
-    subtitle: "text-gray-600/60 pr-20",
+    subtitle: "text-gray-600/60 lg:pr-20",
     img3: "w-full",
   };
 
@@ -470,7 +470,7 @@ export const PersHome_8 = () => {
     newsForm:
       "w-full lg:w-auto px-5 py-4 rounded-md outline-none bg-white border border-dark-creme ",
     newsSubmitForm:
-      "w-full lg:w-auto px-10 py-3 rounded-md shadow-sm hover:shadow-md bg-white font-bold",
+      "w-full md:w-auto px-10 py-3 rounded-md shadow-sm hover:shadow-md bg-white font-bold",
   };
 
   const Data = Database.page_8;

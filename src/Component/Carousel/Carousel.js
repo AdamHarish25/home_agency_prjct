@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import "./Carousel.css";
 import { useViewport } from "../Viewport";
+import './Carousel.css'
 
 const Carousel = (props) => {
   var { children, show } = props;
@@ -21,13 +21,13 @@ const Carousel = (props) => {
     setLength(children && children.length);
     const handleWinResize = () => {
       setCurrentIndex(0);
-    }
+    };
 
-    window.addEventListener('resize', handleWinResize);
+    window.addEventListener("resize", handleWinResize);
 
-    return() => {
-      window.removeEventListener('resize', handleWinResize);
-    }
+    return () => {
+      window.removeEventListener("resize", handleWinResize);
+    };
   }, [children]);
 
   const next = () => {
@@ -67,22 +67,21 @@ const Carousel = (props) => {
 
     setTouchPosition(null);
   };
-  
 
-   const handleDragStart = (e) => {
-     setDragStartX(e.clientX);
-     setIsDragging(true)
-   };
+  const handleDragStart = (e) => {
+    setDragStartX(e.clientX);
+    setIsDragging(true);
+  };
 
-   const handleDrag = (e) => {
-     if (isDragging) {
+  const handleDrag = (e) => {
+    if (isDragging) {
       const dragDistance = e.clientX - dragStartX;
       setDraggedDistance(dragDistance);
-     }
-   };
+    }
+  };
 
-   const handleDragEnd = () => {
-     if (isDragging) {
+  const handleDragEnd = () => {
+    if (isDragging) {
       const containerWidth = containerRef.current.offsetWidth;
       const itemWidth = containerWidth / Length;
       const threshold = itemWidth * 0.3; // Adjust the threshold value as needed
@@ -95,8 +94,8 @@ const Carousel = (props) => {
 
       setDraggedDistance(0);
       setIsDragging(false);
-     }
-   };
+    }
+  };
 
   var carouselCountDisplay;
 
@@ -147,13 +146,20 @@ const Carousel = (props) => {
       </div>
 
       <div className="carousel-indicators">
-            {Array.from({length: Length - show + 1}).map((_, index) => (
-              <button key={index} className={`carousel-indicator ${currentIndex === index ? "active" : ""}`} onClick={() => setCurrentIndex(index)}/>
-
-            ))}
+        {Array.from({ length: Length - show + 1 }).map((_, index) => (
+          <button
+            key={index}
+            className={`carousel-indicator ${
+              currentIndex === index ? "active" : ""
+            }`}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
       </div>
 
-      <div className={`button-box ${viewport.innerWidth < 1024 ? "hidden" : ""}`}>
+      <div
+        className={`button-box ${viewport.innerWidth < 1024 ? "hidden" : ""}`}
+      >
         <button
           onClick={prev}
           className={`left-arrow ${

@@ -101,7 +101,7 @@
   height: 10px;
   border-radius: 100%;
   background-color: transparent;
-  border: 1px gray solid ;
+  border: 1px gray solid;
   margin: 0 5px;
   cursor: pointer;
 }
@@ -111,7 +111,7 @@
 }
 
 .carousel-indicator.active {
-  background-color: #EF6D58;
+  background-color: #ef6d58;
   border: 0px;
 }
 
@@ -127,5 +127,5 @@
 }
 
 .button-box.hidden {
-    display: none;
+  display: none;
 }

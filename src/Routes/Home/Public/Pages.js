@@ -19,7 +19,7 @@ const Database = DataStorage.PublicHome;
 export const PubHPage1 = () => {
   const className = {
     container:
-      "w-full h-auto py-32 px-10 xl:px-20 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 font-Epilogue",
+      "w-full h-auto py-32 px-8 xl:px-20 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-5 font-Epilogue",
     img: "order-1 lg:order-2",
     paragraphBox:
       "h-full flex flex-col justify-center items-center gap-16 w-full relative px-0 xl:px-20 order-2 lg:order-1",
@@ -139,7 +139,7 @@ export const PubHPage3 = () => {
     paragraph: "text-dark-brown/60",
     button:
       "px-5 py-2 text-dark-brown rounded-lg bg-white block w-fit text-xs font-semibold shadow-sm hover:shadow-md transition-shadow duration-200",
-    cardBox: "w-full px-10 grid grid-cols-1 lg:grid-cols-3 list-none",
+    cardBox: "w-full lg:px-10 grid grid-cols-1 md:grid-cols-3 list-none",
     card: `w-full h-full border border-dark-creme space-y-3 p-10 ${
       viewport.innerWidth < 1024
         ? "last-of-type:rounded-b-lg first-of-type:rounded-t-lg"
@@ -173,7 +173,7 @@ export const PubHPage3 = () => {
       <ul className={className.cardBox}>
         {Data.card.map((data1, index) => (
           <li key={index} className={className.card}>
-            <h1 className={className.cardValue}>{data1.count}</h1>
+            <h1 className={className.cardValue}>{data1.value}</h1>
             <p>{data1.title}</p>
           </li>
         ))}
@@ -213,7 +213,7 @@ export const PubHPage4 = () => {
   const className = {
     container:
       "w-screen bg-light-creme h-auto px-10 py-20 space-y-20 font-Epilogue",
-    box: "w-full grid grid-cols-1 lg:grid-cols-2 gap-14 place-items-center text-dark-brown px-5",
+    box: "w-full grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-center text-dark-brown px-5",
     header: "text-light-accent font-light",
     title: "text-3xl md:text-4xl font-bold",
     paragraph: "text-dark-brown/60",
@@ -222,7 +222,7 @@ export const PubHPage4 = () => {
     listVertical: "space-y-4 list-none ",
     listVerticalChild: "flex items-center gap-5 font-light text-dark-brown",
     listHorizontal:
-      "w-full h-full grid grid-cols-1 lg:grid-cols-2 place-items-end",
+      "w-full h-full grid grid-cols-1 md:grid-cols-2 place-items-end",
     listHorizontalChild: "w-full h-fit px-10 py-16 space-y-5 border",
     link: "block w-fit",
     LHCTitle: "text-lg font-medium",
@@ -305,9 +305,9 @@ export const PubHPage5 = () => {
     button:
       "px-5 py-2 text-dark-brown rounded-lg bg-white block w-fit text-xs font-semibold shadow-sm hover:shadow-md transition-shadow duration-200",
     outerCardBox: "space-y-8 w-full lg:px-10",
-    cardBox: "w-full h-auto grid grid-cols-1 lg:grid-cols-3 place-items-center",
-    card: `w-full h-full border border-dark-creme bg-transparent space-y-7 p-12 ${
-      viewport.innerWidth < 1024
+    cardBox: "w-full h-auto grid grid-cols-1 md:grid-cols-3 place-items-center",
+    card: `w-full h-full border border-dark-creme bg-transparent space-y-7 p-8 ${
+      viewport.innerWidth < 768
         ? "last-of-type:rounded-b-lg first-of-type:rounded-t-lg"
         : "last-of-type:rounded-r-lg first-of-type:rounded-l-lg"
     }`,
@@ -409,7 +409,7 @@ export const PubHPage6 = () => {
     showcase: "space-y-7 w-full text-center",
 
     banner:
-      "w-full rounded-lg bg-light-creme grid grid-cols-1 lg:grid-cols-3 place-items-center gap-10 pt-20 px-8 lg:py-14 lg:px-8 overflow-visible relative",
+      "w-full rounded-lg bg-light-creme grid grid-cols-1 md:grid-cols-3 place-items-center gap-10 pt-20 px-8 md:pt-10 overflow-visible relative",
     bannerImg1: "absolute object-contain w-28 -top-16 left-7 lg:left-20",
     bannerImg2: "w-full",
     bannerImg3: "lg:absolute w-72 lg:w-64 object-contain bottom-0 right-10",
@@ -531,8 +531,8 @@ export const PubHPage7 = () => {
     header: "text-light-accent font-light",
     headerBox: "text-center space-y-5",
     title: "text-3xl md:text-5xl font-bold text-white xl:px-[450px]",
-    gridBox: "w-full grid grid-cols-1 lg:grid-cols-3 gap-5",
-    card: "p-10 border border-dark-gray rounded-md text-white space-y-10 h-full",
+    gridBox: "w-full grid grid-cols-1 md:grid-cols-3 gap-5",
+    card: "p-7 lg:p-10 border border-dark-gray rounded-md text-white space-y-10 h-full",
     buttonBox: "w-full grid place-items-center",
     button:
       "px-5 py-3 rounded-md font-bold text-white border border-white/30 block w-fit",
@@ -648,7 +648,7 @@ export const PubHPage8 = () => {
 export const PubHPage9 = () => {
   const className = {
     container:
-      "w-full grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10 text-white py-10 px-10",
+      "w-full grid grid-cols-1 md:grid-cols-2 place-items-center gap-10 text-white py-10 px-10",
     contentBox:
       "relative flex flex-col justify-center items-start gap-5 h-full",
     background: "absolute right-10 top-5 opacity-50",
@@ -997,11 +997,11 @@ export const PubHPage15 = () => {
 
     const className = {
       container: "w-full space-y-10 py-10",
-      box1: "w-full flex px-10 flex-col md:flex-row items-start lg:items-center justify-between gap-10 text-dark-brown",
+      box1: "w-full flex px-10 flex-col lg:flex-row items-start md:items-center justify-between gap-10 text-dark-brown",
       title1: "text-2xl md:text-4xl font-bold",
       title2: "text-xl font-semibold",
-      button1: "px-5 py-3 font-bold rounded-md bg-white w-full lg:w-auto",
-      form1: "flex flex-col lg:flex-row items-center gap-4 w-full md:w-[500px]",
+      button1: "px-5 py-3 font-bold rounded-md bg-white w-full md:w-auto",
+      form1: "flex flex-col md:flex-row items-center gap-4 w-full lg:w-[500px]",
       input:
         "p-3 placeholder-gray-500 border border-dark-creme rounded-lg w-full outline-none",
       textBox:
@@ -1016,8 +1016,8 @@ export const PubHPage15 = () => {
       mobileFormContainer: "w-full flex flex-col items-center gap-10",
       desktopFormContainer: "w-full relative",
 
-      infosContainer: "w-full grid grid-cols-1 lg:grid-cols-3 px-10",
-      infoCard: "space-y-6 py-5 px-8 border border-dark-creme",
+      infosContainer: "w-full grid grid-cols-1 md:grid-cols-3 px-10",
+      infoCard: "space-y-6 py-5 px-6 lg:px-8 border border-dark-creme",
       infoTitleCard: "flex items-center gap-4",
       infoTitle: "text-lg text-light-accent font-light",
     };
@@ -1154,7 +1154,7 @@ export const PubHPage15 = () => {
 export const PubHPage16 = () => {
 
   const className = {
-    container: "w-full p-10 py-10 lg:px-32",
+    container: "w-full p-10 py-10 xl:px-32",
     innerBox: "place-items-center grid grid-cols-1 gap-7 lg:grid-cols-2 bg-light-accent p-20 rounded-md",
     headerBox: "space-y-5 order-2 lg:order-1",
     title: "text-3xl md:text-4xl lg:text-6xl font-bold text-white",

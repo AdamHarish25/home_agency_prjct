@@ -1,9 +1,10 @@
-export const AboutPersonal = () => {
-    const className = {
+export const AbtPersonalPage_1 = () => {
+    const className ={
         container: "",
-    }
+    };
 
-    return(
+
+    return (
         <div className={className.container}>
 
         </div>

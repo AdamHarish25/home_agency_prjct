@@ -64,7 +64,7 @@ export const WebFPage_2 = () => {
     title: "text-3xl md:text-4xl font-bold",
     innerBox: "space-y-5 w-full px-5 md:px-10",
     bottomBox: "w-full grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center",
-    list: "w-full h-full grid grid-cols-1 lg:grid-cols-2 place-items-end",
+    list: "w-full h-full grid grid-cols-1 md:grid-cols-2 place-items-end",
     listChild: "w-full h-fit px-10 py-16 space-y-5 border",
     link: "block w-fit hover:underline",
     ListChildTitle: "text-lg font-medium",
@@ -190,10 +190,10 @@ export const WebFPage_4 = () => {
     subtitle: "text-sm text-gray-600/70",
     innerBox: "space-y-5 p-10",
     videoPlayer: "w-full h-full",
-    cardBox: "w-full grid grid-cols-1 lg:grid-cols-3",
+    cardBox: "w-full grid grid-cols-1 md:grid-cols-3",
     cardValue: "font-bold text-3xl",
     card: `w-full h-full border border-dark-creme space-y-3 p-10 ${
-      viewport.innerWidth < 1024
+      viewport.innerWidth < 768
         ? "last-of-type:rounded-b-lg first-of-type:rounded-t-lg"
         : "last-of-type:rounded-r-lg first-of-type:rounded-l-lg"
     }`,
@@ -811,7 +811,7 @@ export const WebFPage_12 = () => {
     newsForm:
       "w-full lg:w-auto px-5 py-3 rounded-md outline-none text-gray-500 bg-white border border-dark-creme ",
     newsSubmitForm:
-      "w-full lg:w-auto px-10 py-3 rounded-md shadow-sm hover:shadow-md border border-light-creme font-bold",
+      "w-full md:w-auto px-10 py-3 rounded-md shadow-sm hover:shadow-md border border-light-creme font-bold",
 
     gridBox:
       "w-full p-10 lg:p-20 grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10",
@@ -909,11 +909,12 @@ export const WebFPage_12 = () => {
 
 export const WebFPage_13 = () => {
   const className = {
-    container: "w-full p-10 md:p-20 bg-gradient-to-b from-dark-purple to-light-creme from-80% to-10%",
-    banner: "w-full bg-light-accent rounded-lg grid grid-cols-1 lg:grid-cols-2 place-items-center p-10 text-white",
+    container: "w-full p-10 lg:p-20 bg-gradient-to-b from-dark-purple to-light-creme from-80% to-10%",
+    banner: "w-full bg-light-accent rounded-lg grid grid-cols-1 md:grid-cols-2 place-items-center p-10 text-white",
     title: "text-3xl lg:text-5xl font-bold",
     button: "block w-fit px-7 py-2 rounded-lg bg-white text-dark-brown font-semibold",
-    innerBox: "space-y-5 md:px-5",
+    innerBox: "space-y-5 md:px-5 order-2 md:order-1",
+    img: "order-1 md:order-2"
   };
 
   const Data = Database.page_13;
@@ -934,7 +935,7 @@ export const WebFPage_13 = () => {
           </Link>
         </div>
 
-        <img src={Data.img} alt=""/>
+        <img src={Data.img} alt="" className={className.img}/>
       </div>
     </div>
   )

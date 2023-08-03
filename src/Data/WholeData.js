@@ -106,25 +106,39 @@ import WebFImg1 from "../Attachments/Image/Webflow/WebflowImg1.png";
 import WebFImg2_1 from "../Attachments/Image/Webflow/WebflowImg2_1.svg";
 import WebFImg2_2 from "../Attachments/Image/Webflow/WebflowImg2_2.png";
 
-import WebFList3_1 from '../Attachments/Image/Webflow/WebflowList3/list1.png';
-import WebFList3_2 from '../Attachments/Image/Webflow/WebflowList3/list2.png';
+import WebFList3_1 from "../Attachments/Image/Webflow/WebflowList3/list1.png";
+import WebFList3_2 from "../Attachments/Image/Webflow/WebflowList3/list2.png";
 import WebFList3_3 from "../Attachments/Image/Webflow/WebflowList3/list3.png";
 
-import WebFVideo4 from '../Attachments/Video/video.mp4';
+import WebFVideo4 from "../Attachments/Video/video.mp4";
 
-import WebFList5_1 from '../Attachments/Image/Webflow/WebflowCard5/card1.png';
+import WebFList5_1 from "../Attachments/Image/Webflow/WebflowCard5/card1.png";
 import WebFList5_2 from "../Attachments/Image/Webflow/WebflowCard5/card2.png";
 import WebFList5_3 from "../Attachments/Image/Webflow/WebflowCard5/card3.png";
 import WebFList5_4 from "../Attachments/Image/Webflow/WebflowCard5/card4.png";
 import WebFList5_5 from "../Attachments/Image/Webflow/WebflowCard5/card5.png";
 import WebFList5_6 from "../Attachments/Image/Webflow/WebflowCard5/card6.png";
 
-import WebFImg5_1 from '../Attachments/Image/Webflow/WebflowImg5_1.png'
+import WebFImg5_1 from "../Attachments/Image/Webflow/WebflowImg5_1.png";
 import WebFImg5_2 from "../Attachments/Image/Webflow/WebflowImg5_2.png";
 import WebFImg5_3 from "../Attachments/Image/Webflow/WebflowImg5_3.png";
 
-import WebFImg13 from '../Attachments/Image/Webflow/WebflowImg13.png';
+import WebFImg13 from "../Attachments/Image/Webflow/WebflowImg13.png";
 
+import AbtAgencyCard2_1 from '../Attachments/Image/AboutAgency/AbtAgencyCard2/card1.png';
+import AbtAgencyCard2_2 from "../Attachments/Image/AboutAgency/AbtAgencyCard2/card2.png";
+import AbtAgencyCard2_3 from "../Attachments/Image/AboutAgency/AbtAgencyCard2/card3.png";
+import AbtAgencyCard2_4 from "../Attachments/Image/AboutAgency/AbtAgencyCard2/card4.png";
+
+import AbtAgencyImg3 from "../Attachments/Image/AboutAgency/AbtAgencyImg3.svg";
+
+import AbtAgencyList6_1 from "../Attachments/Image/AboutAgency/AbtAgencyList6/list1.svg";
+import AbtAgencyList6_2 from "../Attachments/Image/AboutAgency/AbtAgencyList6/list2.svg";
+import AbtAgencyList6_3 from "../Attachments/Image/AboutAgency/AbtAgencyList6/list3.svg";
+import AbtAgencyList6_4 from "../Attachments/Image/AboutAgency/AbtAgencyList6/list4.svg";
+import AbtAgencyList6_5 from "../Attachments/Image/AboutAgency/AbtAgencyList6/list5.svg";
+
+import AbtAgencyImg7 from "../Attachments/Image/AboutAgency/AbtAgencyImg7.png";
 
 const DataStorage = {
   Navbar: {
@@ -215,7 +229,7 @@ const DataStorage = {
         },
         {
           title: "Agency members",
-          value: "72",
+          value: "72+",
         },
         {
           title: "Projects complete",
@@ -1776,13 +1790,223 @@ const DataStorage = {
       title: "Help To Build Your Dream Project",
       subtitle:
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
-      
+
       button: {
         title: "Contact Now",
         link: "/Contact",
       },
 
-      img: WebFImg13
+      img: WebFImg13,
+    },
+  },
+
+  AboutAgency: {
+    page_1: {
+      title: "About Us",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+    },
+
+    page_2: {
+      header: "About",
+      title: "An Experience Design Agency",
+      subtitle: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.\n 
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCard: [
+        {
+          src: AbtAgencyCard2_1,
+        },
+        {
+          src: AbtAgencyCard2_2,
+        },
+        {
+          src: AbtAgencyCard2_3,
+        },
+        {
+          src: AbtAgencyCard2_4,
+        },
+      ],
+    },
+
+    page_3: {
+      header: "Features",
+      title: "Long run, and work as an extension of the merchant's team.",
+      subtitle:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension.",
+
+      list: [
+        {
+          img: AbtAgencyImg3,
+          title: "Professional",
+          subtitle: "Full service range including technical skills, design.",
+          color: "bg-[#FFFFFF] border-[#F3D1BF] shadow-xl",
+        },
+        {
+          img: "",
+          title: "Accessibility",
+          subtitle: "Business understanding, ability to put themselves.",
+          color: "border-[#F3D1BF] bg-transparent shadow-none",
+        },
+      ],
+
+      card: [
+        {
+          value: "42%",
+          title: "Years of experience",
+        },
+        {
+          value: "73+",
+          title: "Agency members",
+        },
+        {
+          value: "5.000",
+          title: "Projects complete",
+        },
+      ],
+    },
+
+    page_4: {
+      title: "Team of Designers and Developers",
+      header: "Our Team",
+
+      carousel: [
+        {
+          img: pubCarItem1,
+          name: "Azah Anyeni",
+          role: "Designer",
+        },
+        {
+          img: pubCarItem2,
+          name: "Roelof Bekkenenks",
+          role: "React Developer",
+        },
+        {
+          img: pubCarItem3,
+          name: "Leonardo Oliveira",
+          role: "Illustrator",
+        },
+        {
+          img: pubCarItem4,
+          name: "Izabella Tabakova",
+          role: "Product Designer",
+        },
+        {
+          img: pubCarItem5,
+          name: "Manilla Yadhavi",
+          role: "3D Illustrator",
+        },
+      ],
+    },
+
+    page_5: {
+      header: "Testimonial",
+      title: "What our clients saying",
+
+      card: [
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. 
+          They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+          name: "Alan Marti",
+          company: "Meta.inc",
+          img: publist10_1,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `Provide your business with a variety of digital solutions to promote your product or service online.`,
+          name: "Richardo Kann",
+          company: "Photogram",
+          img: publist10_2,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.`,
+          name: "Graham Griffiths",
+          company: "Twitor",
+          img: publist10_3,
+        },
+
+        {
+          rating: 5, // max 5 and round value only, ex: 4
+
+          comment: `Promote your product or service online and help you hit your marketing goals and grow your business.`,
+          name: "Maria Trofimova",
+          company: "Whochat",
+          img: publist10_4,
+        },
+      ],
+    },
+
+    page_6: {
+      header: "Faq",
+      title: "Frequently Asked Questions",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+      button: {
+        title: "Contact Us",
+        link: "/",
+      },
+
+      faqs: [
+        {
+          question: "A digital agency is a business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Hire to outsource your digital",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Marketing efforts",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Can provide your business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+      ],
+
+      logos: [
+        {
+          img: AbtAgencyList6_1,
+        },
+        {
+          img: AbtAgencyList6_2,
+        },
+        {
+          img: AbtAgencyList6_3,
+        },
+        {
+          img: AbtAgencyList6_4,
+        },
+        {
+          img: AbtAgencyList6_5,
+        },
+      ],
+    },
+
+    page_7: {
+      title: "Help To Build Your Dream Project",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+      button: {
+        title: "Contact Now",
+        link: "/Contact",
+      },
+
+      img: AbtAgencyImg7,
     },
   },
 };
