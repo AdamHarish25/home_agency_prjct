@@ -1337,6 +1337,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-dark-creme{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(243 209 191 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-6-sides-star{
   background-image: url('./Attachments/Image/PublicHome/pubImg1-2.svg') !important;
 }
@@ -1525,6 +1530,11 @@ video {
   padding-bottom: 8rem !important;
 }
 
+.py-36{
+  padding-top: 9rem !important;
+  padding-bottom: 9rem !important;
+}
+
 .py-4{
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
@@ -1669,6 +1679,14 @@ video {
 
 .text-dark-brown\/60{
   color: rgb(57 20 0 / 0.6) !important;
+}
+
+.text-dark-brown\/80{
+  color: rgb(57 20 0 / 0.8) !important;
+}
+
+.text-dark-brown\/90{
+  color: rgb(57 20 0 / 0.9) !important;
 }
 
 .text-dark-brown\/\[0\.64\]{
@@ -1910,6 +1928,10 @@ video {
 
   .md\:w-96{
     width: 24rem !important;
+  }
+
+  .md\:w-\[600px\]{
+    width: 600px !important;
   }
 
   .md\:w-auto{

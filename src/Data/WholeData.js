@@ -64,6 +64,8 @@ import {
   FaCompass,
   FaPhone,
   FaEnvelope,
+  FaCalendarCheck,
+  FaBriefcase,
 } from "react-icons/fa";
 
 import PersImg1 from "../Attachments/Image/PersonalHome/PersImg1.png";
@@ -125,7 +127,7 @@ import WebFImg5_3 from "../Attachments/Image/Webflow/WebflowImg5_3.png";
 
 import WebFImg13 from "../Attachments/Image/Webflow/WebflowImg13.png";
 
-import AbtAgencyCard2_1 from '../Attachments/Image/AboutAgency/AbtAgencyCard2/card1.png';
+import AbtAgencyCard2_1 from "../Attachments/Image/AboutAgency/AbtAgencyCard2/card1.png";
 import AbtAgencyCard2_2 from "../Attachments/Image/AboutAgency/AbtAgencyCard2/card2.png";
 import AbtAgencyCard2_3 from "../Attachments/Image/AboutAgency/AbtAgencyCard2/card3.png";
 import AbtAgencyCard2_4 from "../Attachments/Image/AboutAgency/AbtAgencyCard2/card4.png";
@@ -139,6 +141,17 @@ import AbtAgencyList6_4 from "../Attachments/Image/AboutAgency/AbtAgencyList6/li
 import AbtAgencyList6_5 from "../Attachments/Image/AboutAgency/AbtAgencyList6/list5.svg";
 
 import AbtAgencyImg7 from "../Attachments/Image/AboutAgency/AbtAgencyImg7.png";
+
+import AbtPersonalImg1 from "../Attachments/Image/AboutPersonal/AbtPersonalImg1.png";
+
+import AbtPersonalList5_1 from "../Attachments/Image/AboutPersonal/AbtPersonalList5/list1.svg";
+import AbtPersonalList5_2 from "../Attachments/Image/AboutPersonal/AbtPersonalList5/list2.svg";
+import AbtPersonalList5_3 from "../Attachments/Image/AboutPersonal/AbtPersonalList5/list3.svg";
+import AbtPersonalList5_4 from "../Attachments/Image/AboutPersonal/AbtPersonalList5/list4.svg";
+import AbtPersonalList5_5 from "../Attachments/Image/AboutPersonal/AbtPersonalList5/list5.svg";
+
+import AbtPersonalImg5_1 from "../Attachments/Image/AboutPersonal/AbtPersonalImg5_1.png";
+import AbtPersonalImg5_2 from "../Attachments/Image/AboutPersonal/AbtPersonalImg5_2.png";
 
 const DataStorage = {
   Navbar: {
@@ -2009,6 +2022,90 @@ const DataStorage = {
       img: AbtAgencyImg7,
     },
   },
-};
 
+  AboutPersonal: {
+    page_1: {
+      title: "About Me",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+    },
+
+    page_2: {
+      header: "Gabriel Pires",
+      title: "Professional Web Designer",
+      subtitle: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team. A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+      img: AbtPersonalImg1,
+
+      card: [
+        {
+          value: "42%",
+          title: "Years of experience",
+          icon: <FaCalendarCheck />,
+        },
+        {
+          value: "73+",
+          title: "Projects Done",
+          icon: <FaBriefcase />,
+        },
+      ],
+    },
+
+    page_3: {
+      header: "Video Reel",
+      title: "Unlock The Greatest Value Possible",
+      subtitle:
+        "Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.",
+
+      video: video1,
+      paragraph: `
+      Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.
+      `,
+    },
+
+    page_4: {
+      header: "Founder Words",
+      title:
+        "Digital agency is a business you hire to outsource your digital marketing efforts",
+      name: "Gabriel Pires",
+      position: "Founder",
+    },
+
+    page_5: {
+      logos: [
+        {
+          img: AbtPersonalList5_1,
+        },
+        {
+          img: AbtPersonalList5_2,
+        },
+        {
+          img: AbtPersonalList5_3,
+        },
+        {
+          img: AbtPersonalList5_4,
+        },
+        {
+          img: AbtPersonalList5_5,
+        },
+      ],
+
+      banner: {
+        img1: AbtPersonalImg5_1,
+        header: "Get Started",
+        title: "I Help Companies Move Faster",
+        button: {
+          title: "Contact Me",
+          link: "/",
+        },
+
+        subtitle:
+          "Put themselves in the merchant's shoes. It is meant to partner on the long run.",
+
+        img2: AbtPersonalImg5_2,
+      },
+    },
+  },
+};
 export { DataStorage };
