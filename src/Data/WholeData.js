@@ -213,8 +213,8 @@ const DataStorage = {
         link: "/Service",
       },
       {
-        title: "Pricing",
-        link: "/Pricing",
+        title: "Work",
+        link: "/Work",
       },
       {
         title: "Blog",
