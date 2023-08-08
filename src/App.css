@@ -2046,6 +2046,10 @@ video {
     padding-top: 2.5rem !important;
   }
 
+  .md\:pt-0{
+    padding-top: 0px !important;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem !important;
     line-height: 2rem !important;

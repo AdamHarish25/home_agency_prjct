@@ -28,7 +28,7 @@ export const ContactPage_1 = () => {
 
 export const ContactPage_2 = () => {
     const className = {
-      container: "w-full space-y-10 py-10 md:pb-10",
+      container: "w-full space-y-10 pb-10 pt-10 md:pt-0",
 
       title: "text-xl font-semibold",
       input:
