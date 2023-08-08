@@ -11,7 +11,7 @@ import {
   AbtAgencyPage_7,
 } from "./Agency/Pages";
 
-export const AboutAgency = () => {
+const AboutAgency = () => {
   const className = {
     container: "w-screen h-auto font-Epilogue bg-light-creme",
     darkBox: "bg-dark-purple w-full",
@@ -37,3 +37,6 @@ export const AboutAgency = () => {
     </div>
   );
 };
+
+
+export default AboutAgency

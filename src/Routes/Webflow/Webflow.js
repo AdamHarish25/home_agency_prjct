@@ -3,7 +3,7 @@ import Navbar from "../../Component/Navbar";
 import { WebFPage_1, WebFPage_10, WebFPage_11, WebFPage_12, WebFPage_13, WebFPage_2, WebFPage_3, WebFPage_4, WebFPage_5, WebFPage_6, WebFPage_7, WebFPage_8, WebFPage_9 } from "./Pages";
 
 
-export const Webflow = () => {
+const Webflow = () => {
     const className = {
       container: "w-screen h-auto font-Epilogue bg-light-creme ",
       darkBox: "w-full bg-dark-purple text-white",
@@ -39,3 +39,5 @@ export const Webflow = () => {
       </div>
     );
 }
+
+export default Webflow;

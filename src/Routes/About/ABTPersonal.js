@@ -4,7 +4,7 @@ import { Footer } from "../../Component/Footer";
 import Navbar from "../../Component/Navbar";
 import { AbtPersonalPage_1, AbtPersonalPage_2, AbtPersonalPage_3, AbtPersonalPage_4, AbtPersonalPage_5 } from "./Personal/Pages";
 
-export const AboutPersonal = () => {
+const AboutPersonal = () => {
     const className = {
       container: "w-screen h-auto font-Epilogue bg-light-creme",
       darkBox: "bg-dark-purple w-full",
@@ -25,3 +25,5 @@ export const AboutPersonal = () => {
         </div>
     )
 }
+
+export default AboutPersonal;

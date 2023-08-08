@@ -66,7 +66,11 @@ import {
   FaEnvelope,
   FaCalendarCheck,
   FaBriefcase,
+  FaPinterestP,
+  FaLinkedinIn,
 } from "react-icons/fa";
+
+import { RiArtboardFill, RiSettings5Fill } from "react-icons/ri";
 
 import PersImg1 from "../Attachments/Image/PersonalHome/PersImg1.png";
 
@@ -153,6 +157,49 @@ import AbtPersonalList5_5 from "../Attachments/Image/AboutPersonal/AbtPersonalLi
 import AbtPersonalImg5_1 from "../Attachments/Image/AboutPersonal/AbtPersonalImg5_1.png";
 import AbtPersonalImg5_2 from "../Attachments/Image/AboutPersonal/AbtPersonalImg5_2.png";
 
+import ServiceImg3 from "../Attachments/Image/Service/ServiceImg3.png";
+import ServiceImg4 from "../Attachments/Image/Service/ServiceImg4.png";
+
+import PortfolioMCard2_1 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card1.png";
+import PortfolioMCard2_2 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card2.png";
+import PortfolioMCard2_3 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card3.png";
+import PortfolioMCard2_4 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card4.png";
+import PortfolioMCard2_5 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card5.png";
+import PortfolioMCard2_6 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card6.png";
+import PortfolioMCard2_7 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card7.png";
+import PortfolioMCard2_8 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card8.png";
+import PortfolioMCard2_9 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card9.png";
+import PortfolioMCard2_10 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card10.png";
+import PortfolioMCard2_11 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card11.png";
+import PortfolioMCard2_12 from "../Attachments/Image/PortfolioMain/PortfolioMCard2/card12.png";
+
+import PortfolioMImg3 from "../Attachments/Image/PortfolioMain/PortfolioMImg3.png";
+
+import Vortex from "../Attachments/Image/PortfolioProject/PortfolioProjectClient/Vortex.svg";
+
+import PortfolioPrCardImg1_1 from "../Attachments/Image/PortfolioProject/PortfolioCardImg/card1.png";
+import PortfolioPrCardImg1_2 from "../Attachments/Image/PortfolioProject/PortfolioCardImg/card2.png";
+import PortfolioPrCardImg1_3 from "../Attachments/Image/PortfolioProject/PortfolioCardImg/card3.png";
+import PortfolioPrCardImg1_4 from "../Attachments/Image/PortfolioProject/PortfolioCardImg/card4.png";
+
+import PortfolioPrCardImg2_1 from "../Attachments/Image/PortfolioProject/PortfolioCardLink/card1.png";
+import PortfolioPrCardImg2_2 from "../Attachments/Image/PortfolioProject/PortfolioCardLink/card2.png";
+
+import BlogCard1 from "../Attachments/Image/BlogArticles/BlogCard/Item1.png";
+import BlogCard2 from "../Attachments/Image/BlogArticles/BlogCard/Item2.png";
+import BlogCard3 from "../Attachments/Image/BlogArticles/BlogCard/Item3.png";
+import BlogCard4 from "../Attachments/Image/BlogArticles/BlogCard/Item4.png";
+import BlogCard5 from "../Attachments/Image/BlogArticles/BlogCard/Item5.png";
+import BlogCard6 from "../Attachments/Image/BlogArticles/BlogCard/Item6.png";
+import BlogCard7 from "../Attachments/Image/BlogArticles/BlogCard/Item7.png";
+import BlogCard8 from "../Attachments/Image/BlogArticles/BlogCard/Item8.png";
+
+import BlogBanner from "../Attachments/Image/BlogArticles/Banner.png";
+
+import quote from "../Attachments/Image/quote.png";
+
+import Editor from "../Attachments/Image/BlogArticlePage/Editor.png";
+
 const DataStorage = {
   Navbar: {
     logo: logo,
@@ -163,7 +210,7 @@ const DataStorage = {
       },
       {
         title: "Services",
-        link: "/Services",
+        link: "/Service",
       },
       {
         title: "Pricing",
@@ -335,7 +382,7 @@ const DataStorage = {
       },
       button: {
         title: "Explore",
-        link: "/Services",
+        link: "/Service",
       },
 
       title2: "How Our Agency Can Help",
@@ -348,7 +395,7 @@ const DataStorage = {
 
           button: {
             title: "Learn More",
-            link: "/Services",
+            link: "/Service",
           },
         },
         {
@@ -359,7 +406,7 @@ const DataStorage = {
 
           button: {
             title: "Discover More",
-            link: "/Services",
+            link: "/Service",
           },
         },
         {
@@ -370,7 +417,7 @@ const DataStorage = {
 
           button: {
             title: "Explore Now",
-            link: "/Services",
+            link: "/Service",
           },
         },
       ],
@@ -691,7 +738,7 @@ const DataStorage = {
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
       button: {
         title: "Contact Us",
-        link: "/",
+        link: "/Contact",
       },
 
       faqs: [
@@ -835,7 +882,7 @@ const DataStorage = {
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
       button: {
         title: "Contact Us",
-        link: "/",
+        link: "/Contact",
       },
     },
   },
@@ -849,7 +896,7 @@ const DataStorage = {
       },
       {
         title: "Services",
-        link: "/Services",
+        link: "/Service",
       },
       {
         title: "Blog",
@@ -865,19 +912,15 @@ const DataStorage = {
     menu2: [
       {
         title: "Design",
-        link: "/Design",
+        link: "/Service#Design",
       },
       {
         title: "Development",
-        link: "/Development",
+        link: "/Service#Development",
       },
       {
         title: "Marketing",
-        link: "/Marketing",
-      },
-      {
-        title: "Pricing",
-        link: "/Pricing",
+        link: "/Service#Marketing",
       },
     ],
 
@@ -951,7 +994,7 @@ const DataStorage = {
       footer: "Want more service? ",
       footerButton: {
         title: "Explore Now",
-        link: "/Services",
+        link: "/Service",
       },
     },
 
@@ -1095,7 +1138,7 @@ const DataStorage = {
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
       button: {
         title: "Contact Us",
-        link: "/",
+        link: "/Contact",
       },
 
       faqs: [
@@ -1324,7 +1367,7 @@ const DataStorage = {
             "Agency provides a full service range including technical skills, design.",
           button: {
             title: "Learn More",
-            link: "/Services",
+            link: "/Service",
           },
         },
         {
@@ -1334,7 +1377,7 @@ const DataStorage = {
             "Full service range including technical skills, design, business.",
           button: {
             title: "Discover More",
-            link: "/Services",
+            link: "/Service",
           },
         },
         {
@@ -1344,7 +1387,7 @@ const DataStorage = {
             "Full service range including technical skills, design, business.",
           button: {
             title: "Explore Now",
-            link: "/Services",
+            link: "/Service",
           },
         },
       ],
@@ -1639,7 +1682,7 @@ const DataStorage = {
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
       button: {
         title: "Contact Us",
-        link: "/",
+        link: "/Contact",
       },
 
       faqs: [
@@ -1964,7 +2007,7 @@ const DataStorage = {
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
       button: {
         title: "Contact Us",
-        link: "/",
+        link: "/Contact",
       },
 
       faqs: [
@@ -2105,6 +2148,2734 @@ const DataStorage = {
 
         img2: AbtPersonalImg5_2,
       },
+    },
+  },
+
+  Service: {
+    page_1: {
+      title: "Service",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+    },
+
+    page_2: {
+      header: "Services",
+      title:
+        "Digital agency is a business you hire to outsource your digital marketing efforts",
+      subtitle: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+    },
+
+    page_3: {
+      header1: {
+        icon: <RiArtboardFill />,
+        header: "Design",
+      },
+
+      content1: {
+        img: ServiceImg3,
+        title:
+          "Agency is a business you hire to outsource your digital marketing efforts",
+        subtitle:
+          "Business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+        list: [
+          {
+            img: check,
+            title: "Web Development",
+          },
+          {
+            img: check,
+            title: "Brand Strategy",
+          },
+          {
+            img: check,
+            title: "Art Direction",
+          },
+        ],
+      },
+
+      header2: {
+        icon: <FaBriefcase />,
+        header: "Development",
+      },
+
+      content2: {
+        header: "Development",
+        title:
+          "Digital agency is a business you hire to outsource your digital marketing efforts",
+        subtitle: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+        A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+      },
+
+      header3: {
+        icon: <RiSettings5Fill />,
+        header: "Marketing",
+      },
+
+      content3: {
+        header: "How we work",
+        title: "Making Your Projects Look Awesome",
+        subtitle:
+          "Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.",
+        list: [
+          {
+            title: "Full service range including",
+          },
+          {
+            title: "Technical skills, design, business",
+          },
+          {
+            title: "Themselves in the merchant's",
+          },
+        ],
+      },
+    },
+
+    page_4: {
+      title: "Help To Build Your Dream Project",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+      button: {
+        title: "Contact Now",
+        link: "/Contact",
+      },
+
+      img: ServiceImg4,
+    },
+  },
+
+  PortfolioMain: {
+    page_1: {
+      title: "Portfolio",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+    },
+
+    page_2: {
+      gridList: [
+        {
+          img: PortfolioMCard2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioMCard2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+
+        {
+          img: PortfolioMCard2_3,
+          title: "Work Media",
+          tag: "Illustration",
+          link: "/Work/Post_3",
+        },
+
+        {
+          img: PortfolioMCard2_4,
+          title: "DDDone",
+          tag: "Motion",
+          link: "/Work/Post_4",
+        },
+
+        {
+          img: PortfolioMCard2_5,
+          title: "Abstract",
+          tag: "Design",
+          link: "/Work/Post_5",
+        },
+
+        {
+          img: PortfolioMCard2_6,
+          title: "HandP",
+          tag: "Branding",
+          link: "/Work/Post_6",
+        },
+
+        {
+          img: PortfolioMCard2_7,
+          title: "Architect",
+          tag: "Motion",
+          link: "/Work/Post_7",
+        },
+
+        {
+          img: PortfolioMCard2_8,
+          title: "CalC",
+          tag: "Design",
+          link: "/Work/Post_8",
+        },
+
+        {
+          img: PortfolioMCard2_9,
+          title: "Sport",
+          tag: "Branding",
+          link: "/Work/Post_9",
+        },
+
+        {
+          img: PortfolioMCard2_10,
+          title: "Marathonees",
+          tag: "Motion",
+          link: "/Work/Post_10",
+        },
+
+        {
+          img: PortfolioMCard2_11,
+          title: "Art",
+          tag: "Design",
+          link: "/Work/Post_11",
+        },
+
+        {
+          img: PortfolioMCard2_12,
+          title: "Business",
+          tag: "Branding",
+          link: "/Work/Post_12",
+        },
+      ],
+
+      filterList: [
+        {
+          title: "Show All",
+          filter: "All",
+        },
+        {
+          title: "Design",
+          filter: "Design",
+        },
+        {
+          title: "Branding",
+          filter: "Branding",
+        },
+        {
+          title: "Illustration",
+          filter: "Illustration",
+        },
+        {
+          title: "Motion",
+          filter: "Motion",
+        },
+      ],
+    },
+
+    page_3: {
+      title: "Help To Build Your Dream Project",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+      button: {
+        title: "Contact Now",
+        link: "/Contact",
+      },
+
+      img: PortfolioMImg3,
+    },
+  },
+
+  PortfolioProject: {
+    post_1: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_2: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_3: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_4: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_5: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_6: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_7: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_8: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_9: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_10: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_11: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+    post_12: {
+      backButton: {
+        link: "..",
+        title: "Back to portfolio",
+      },
+      title: "Work Media Project",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+      paragraph:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      category: [
+        {
+          title: "Art Direction",
+        },
+        {
+          title: "User Interface",
+        },
+        {
+          title: "Branding Strategy",
+        },
+        {
+          title: "Print Design",
+        },
+        {
+          title: "3D Render",
+        },
+      ],
+
+      date: "Dec 2021",
+      client: Vortex,
+      img: pubList6_2,
+
+      header1: "Problem",
+      paragraph1: `Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      video: video1,
+      imgCards: [
+        { src: PortfolioPrCardImg1_1 },
+        { src: PortfolioPrCardImg1_2 },
+        { src: PortfolioPrCardImg1_3 },
+        { src: PortfolioPrCardImg1_4 },
+      ],
+
+      header2: "Solution",
+      paragraph2: `Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+      
+      Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      list: [
+        {
+          icon: <FaFacebookF />,
+          link: "https://www.facebook.com",
+        },
+        {
+          icon: <FaTwitter />,
+          link: "https://www.twitter.com",
+        },
+        {
+          icon: <FaPinterestP />,
+          link: "https://www.pinterest.com",
+        },
+      ],
+
+      title3: "Related Projects",
+      gridList: [
+        {
+          img: PortfolioPrCardImg2_1,
+          title: "Sofa",
+          tag: "Design",
+          link: "/Work/Post_1",
+        },
+
+        {
+          img: PortfolioPrCardImg2_2,
+          title: "Keyboard",
+          tag: "Branding",
+          link: "/Work/Post_2",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: PortfolioMImg3,
+      },
+    },
+  },
+
+  BlogArticle: {
+    blogTitle: {
+      title: "Blog Articles",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+    },
+
+    BlogRow1: [
+      {
+        img: BlogCard1,
+        header: "Stories",
+        title: "Performance marketing agencies specialize",
+        date: "7 Dec, 2021",
+        link: "/Blog/Post_1",
+      },
+      {
+        img: BlogCard2,
+        header: "Design",
+        title: "Digital marketing channels",
+        date: "23 Nov, 2021",
+        link: "/Blog/Post_2",
+      },
+    ],
+
+    BlogRow2: [
+      {
+        img: BlogCard3,
+        header: "Stories",
+        title: "Agency is a business you hire to outsource",
+        date: "5 Nov, 2021",
+        link: "/Blog/Post_3",
+      },
+      {
+        img: BlogCard4,
+        header: "Design",
+        title: "Outsource your digital marketing efforts",
+        date: "29 Oct, 2021",
+        link: "/Blog/Post_4",
+      },
+      {
+        img: BlogCard5,
+        header: "Marketing",
+        title: "Your business with a variety of digital",
+        date: "21 Oct, 2021",
+        link: "/Blog/Post_5",
+      },
+      {
+        img: BlogCard6,
+        header: "Design",
+        title: "Analytics to track and report on results",
+        date: "17 Nov, 2021",
+        link: "/Blog/Post_6",
+      },
+      {
+        img: BlogCard7,
+        header: "Branding",
+        title: "The most well known performance",
+        date: "12 Oct, 2021",
+        link: "/Blog/Post_7",
+      },
+      {
+        img: BlogCard8,
+        header: "Stories",
+        title: "Marketing channels native advertising",
+        date: "9 Oct, 2021",
+        link: "/Blog/Post_8",
+      },
+    ],
+
+    button: "Load More",
+
+    newsBar: {
+      title: "Newsletter",
+      subtitle: "A digital agency is a business you hire to outsource",
+
+      form: "Your email",
+      submitButton: {
+        title: "Subscribe",
+        link: "/",
+      },
+    },
+
+    banner: {
+      title: "Help To Build Your Dream Project",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+      button: {
+        title: "Contact Now",
+        link: "/Contact",
+      },
+
+      img: BlogBanner,
+    },
+  },
+
+  BlogArticlePage: {
+    post_1: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_2: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_3: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_4: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_5: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_6: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_7: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_8: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+
+    post_9: {
+      backButton: {
+        link: ".",
+        title: "Back to Blog",
+      },
+
+      title: "Agency is a business you hire to outsource",
+      storyTeller: (
+        <>
+          In <strong>Stories</strong> by <strong>Gabriel Pires</strong>
+        </>
+      ),
+
+      date: (
+        <>
+          Date <strong>7 Dec, 2021</strong>
+        </>
+      ),
+
+      img: BlogCard1,
+
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+
+      paragraph1:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      header2: "Promote your product",
+      paragraph2_1:
+        "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list2: [
+        {
+          title: "Digital marketing",
+        },
+        {
+          title: "Efforts instead",
+        },
+        {
+          title: "Handling in-house",
+        },
+      ],
+      paragraph2_2: `A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.`,
+
+      header3: "Service online and help",
+      paragraph3_1:
+        "Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
+      list3: [
+        {
+          title: "Marketing efforts",
+        },
+        {
+          title: "Instead of handling",
+        },
+        {
+          title: "In-house",
+        },
+      ],
+      paragraph3_2:
+        "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      quote: {
+        img: quote,
+        title:
+          "Provide your business with a variety of digital solutions to promote your product or service online and help you.",
+      },
+
+      paragraph4:
+        "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+
+      editorial: {
+        img: Editor,
+        name: "Samuil Sadovsky",
+        position: "Editor",
+
+        socialList: [
+          {
+            list: <FaFacebookF />,
+            link: "https://www.facebook.com",
+          },
+          {
+            list: <FaTwitter />,
+            link: "https://www.twitter.com",
+          },
+          {
+            list: <FaLinkedinIn />,
+            link: "https://www.LinkedIn.com",
+          },
+        ],
+      },
+
+      title2: "Related Articles",
+
+      BlogRow: [
+        {
+          img: BlogCard3,
+          header: "Stories",
+          title: "Agency is a business you hire to outsource",
+          date: "5 Nov, 2021",
+          link: "/Blog/Post_3",
+        },
+        {
+          img: BlogCard4,
+          header: "Design",
+          title: "Outsource your digital marketing efforts",
+          date: "29 Oct, 2021",
+          link: "/Blog/Post_4",
+        },
+        {
+          img: BlogCard5,
+          header: "Marketing",
+          title: "Your business with a variety of digital",
+          date: "21 Oct, 2021",
+          link: "/Blog/Post_5",
+        },
+      ],
+
+      banner: {
+        title: "Help To Build Your Dream Project",
+        subtitle:
+          "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+
+        button: {
+          title: "Contact Now",
+          link: "/Contact",
+        },
+
+        img: BlogBanner,
+      },
+    },
+  },
+
+  Contact: {
+    page_1: {
+      title: "Contact",
+      subtitle:
+        "Agency provides a full service range including technical skills, design, business understanding.",
+    },
+
+    page_2: {
+      title: "Get In Touch",
+      form: {
+        placeholder: {
+          email: "Your email",
+          subject: "Subject",
+          message: "Message",
+        },
+        type: {
+          email: "email",
+          subject: "text",
+        },
+      },
+
+      button: "Submit Now",
+
+      list: [
+        {
+          icon: PubList15_1,
+          title: "Phone",
+          content: "+1 (234) 567-89-00",
+        },
+        {
+          icon: PubList15_2,
+          title: "Email",
+          content: "info@agency.com",
+        },
+        {
+          icon: PubList15_3,
+          title: "Address",
+          content: "2247 Lunetta Street, TX 76301",
+        },
+      ],
+    },
+
+    page_3: {
+      header: "Faq",
+      title: "Frequently Asked Questions",
+      subtitle:
+        "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
+      button: {
+        title: "Ask us anything",
+        link: "/Contact",
+      },
+
+      faqs: [
+        {
+          question: "A digital agency is a business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Hire to outsource your digital",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Marketing efforts",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+        {
+          question: "Can provide your business",
+          answer:
+            "Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.",
+        },
+      ],
     },
   },
 };

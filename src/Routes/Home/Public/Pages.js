@@ -10,8 +10,6 @@ import { FaClock, FaMinus, FaPlus } from "react-icons/fa";
 import Carousel from "../../../Component/Carousel/Carousel";
 import RatingStar from "../../../Component/Rating/RatingStar";
 import FaqAccordion from "../../../Component/FAQ/FaqAccordion";
-import Map from "../../../Component/Map/Map";
-
 // To search things press "Ctrl" + "F" simultaneously
 
 const Database = DataStorage.PublicHome;
@@ -940,9 +938,9 @@ export const PubHPage14 = () => {
     title: "text-2xl lg:text-4xl font-bold w-fit",
     button: "bg-white py-3 px-4 md:px-7 rounded-md block w-fit font-bold",
     gridBox: "grid grid-cols-1 lg:grid-cols-3 gap-7 place-items-center",
-    card: "space-y-4 h-full w-full cursor-pointer",
+    card: "space-y-4 h-full w-full cursor-pointer group",
     cardImg: "w-full",
-    cardTitle: "font-bold text-xl md:text-2xl",
+    cardTitle: "font-bold text-xl md:text-2xl group-hover:underline",
     cardDate: "text-sm text-gray-500/90",
     border: "border-dark-creme",
   };
@@ -999,9 +997,10 @@ export const PubHPage15 = () => {
       container: "w-full space-y-10 py-10",
       box1: "w-full flex px-10 flex-col lg:flex-row items-start md:items-center justify-between gap-10 text-dark-brown",
       title1: "text-2xl md:text-4xl font-bold",
-      title2: "text-xl font-semibold",
       button1: "px-5 py-3 font-bold rounded-md bg-white w-full md:w-auto",
       form1: "flex flex-col md:flex-row items-center gap-4 w-full lg:w-[500px]",
+      
+      title2: "text-xl font-semibold",
       input:
         "p-3 placeholder-gray-500 border border-dark-creme rounded-lg w-full outline-none",
       textBox:
@@ -1024,7 +1023,6 @@ export const PubHPage15 = () => {
 
     const Data = Database.page_15;
 
-    const markerPosition = { lat: -6.225850289274498, lng: 107.00105493760948 };
 
     return (
       <div className={className.container}>
